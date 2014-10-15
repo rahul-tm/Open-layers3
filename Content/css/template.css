@@ -1,0 +1,706 @@
+@charset utf-8
+/*==================================
+            Reset CSS 
+==================================*/
+html{height:100%;width:100%;overflow:hidden}
+body{background:none;border:none;font-family:Tahoma,Geneva,sans-serif,Arial,Helvetica,sans-serif;font-size:small;color:#444;overflow:hidden;height:100%;width:100%;margin:0;padding:0}
+img{border:0;vertical-align:top}
+ul{list-style-type:none}
+h1,h2,h3,h4,h5,h6{clear:both;font-family:Modata , Tahoma, Arial, sans-serif;font-weight:400}
+h1{font-size:28px;margin-bottom:15px}
+h2{font-size:18px;margin-bottom:10px}
+h3{font-family:Tahoma, Arial, sans-serif}
+p{font-size:13px;line-height:20px;margin-bottom:15px}
+hr{clear:both;width:100%;height:1px;border:0;margin-bottom:20px;margin-top:10px}
+fieldset{margin-bottom:15px;padding:20px}
+fieldset legend{font-size:13px;padding:5px 10px 0}
+fieldset p{margin-bottom:20px}
+input,textarea,select{margin-top:-2px;margin-right:-4px;padding:0}
+select option{padding-right:15px}
+textarea{display:block;width:100%;height:100%;overflow:hidden}
+label{display:inline-block;font-size:12px;min-width:3px;vertical-align:bottom;margin-left:10px;padding:3px}
+a.button{position:relative;text-decoration:none;width:auto;display:inline-block;margin-right:10px;padding:3px 10px 3px 0}
+a.button span{float:left;position:relative;margin:2px 3px 0}
+input.sf{width:120px}
+input.mf{width:240px}
+input.lf{width:360px}
+.field_desc{font-style:italic;font-size:11px;color:#555}
+.validate_error{font-size:11px;color:red;font-style:italic}
+.validate_success{font-size:11px;color:#739f1d;font-style:italic}
+.inpcol{display:inline-block;margin-bottom:15px;padding:0 30px 0 15px}
+.inpcol p{margin-bottom:5px}
+INPUT[type=radio]{margin:1px 6px 0 10px;padding:0}
+/*=============================*/
+
+/*=================================
+            Common CSS 
+==================================*/
+.assignmargin{cursor:pointer;margin:5px 0 0}
+.cursorPointer{cursor:pointer}
+/*-----------------------------*/
+
+/*=================================
+            Header CSS
+==================================*/
+#header{width:100%;height:130px}
+#header #top{display:block;width:100%;height:83px}
+#top .logo{float:left;display:inline;width:361px}
+#top .meta{display:inline;float:right;position:relative;padding-right:10px;margin-top:10px}
+.meta p{text-align:right;margin-bottom:10px;margin-top:10px;color:#aaa}
+.meta ul li .ui-icon{float:left}
+.meta ul li a{float:left;font-size:10px;text-decoration:none;margin:0 0 0 10px}
+.meta ul li a span{margin-top:-2px}
+p.mid{text-align:center;margin-top:20px}
+p.mid a{padding:0 10px}
+#header #search{float:right;display:block;position:relative;width:249px;right:5px;height:26px;margin-top:13px}
+#search input{background:none;border:0;width:180px;position:relative;font-size:12px;font-style:italic;padding:5px 10px 0 0}
+#search input.but{position:relative;float:left;width:24px!important;height:24px;margin-top:1px;padding:0!important}
+#header #navbar{float:left;display:block}
+#navbar ul.nav{display:inline-block;height:30px;margin-top:11px;position:relative;float:left}
+ul.nav li{float:left;position:relative;height:30px;display:block}
+ul.nav li a{color:#ccc;text-decoration:none;font-size:12px;display:block;padding:10px 20px 12px}
+ul.nav ul{position:absolute;top:-999em;width:10em}
+ul.nav ul li{border:0;width:130px;z-index:9999!important;height:auto;padding:5px}
+ul.nav li:hover ul,ul.nav li.sfHover ul{left:0;top:3.6em;z-index:9999!important}
+ul.nav li li{position:relative;z-index:9999!important}
+ul.nav li li a{display:block;width:110px;font-size:12px;padding:5px 10px}
+.meta ul,.meta ul li{float:right}
+ul.nav li:hover li ul,ul.nav li.sfHover li ul,ul.nav li li:hover li ul,ul.nav li li.sfHover li ul{top:-999em}
+ul.nav li li:hover ul,ul.nav li li.sfHover ul,ul.nav li li li:hover ul,ul.nav li li li.sfHover ul{left:14em;top:0}
+
+/*------------------------------*/
+
+/*==================================
+            Master Menu 
+==================================*/
+#masterHeader{height:60px;position:relative}
+#masterHeader #logo{background:url(logo.png) left center no-repeat transparent;width:54px;height:54px;position:absolute;left:4px;top:1px}
+#masterHeader #slogan{background:url(pghead.png) right center no-repeat transparent;width:421px;height:51px;position:absolute;left:60px;top:3px}
+#masterHeader #userHeaderPanel{position:absolute;right:10px;top:4px}
+#masterHeader #userHeaderPanel .option{color:#555;font-size:12px;text-shadow:0 1px 1px #fff;display:inline-block;float:left;margin:2px 0;padding:0 6px}
+#masterHeader #userHeaderPanel .optionRight{border-right:1px solid #5896DA}
+#masterHeader #userHeaderPanel .optionLeft{border-left:1px solid #5896DA}
+#masterHeader #userHeaderPanel .option a,#masterHeader #userHeaderPanel .option a:visited{color:#5896DA;font-size:90%;font-weight:700;text-decoration:none;text-shadow:0 1px 1px #eee}
+#masterMenu{background:url(images/menubar.png) repeat scroll 0 0 transparent;height:38px;left:0;position:absolute;right:0;top:30px;z-index:999}
+#masterMenu ul{margin:0 0 0 20px;padding:0}
+#masterMenu .menuItem{background:url(images/menubar-item.png) no-repeat scroll left top transparent;color:#1d5ba0;cursor:pointer;float:left;font-weight:700;list-style:none;font-size:12px;text-shadow:0 1px 1px #9DdBf0;padding:7px 10px 7px 15px}
+#masterMenu li a,#masterMenu li a:link,#masterMenu li a:visited{color:#1d5ba0;text-decoration:none}
+.menuItemBox{display:none}
+.innerMenu ul{background:none repeat scroll 0 0 #F5F5F8;border-right:1px solid #DFDFDF;left:0;overflow:hidden;position:absolute;top:0;z-index:9999991;-moz-box-shadow:0 3px 10px #CCC;-webkit-box-shadow:0 3px 10px #CCC;-moz-border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;border-color:0 #DFDFDF #DFDFDF;border-style:none solid solid;border-width:0 1px 1px;margin:0;padding:0}
+.innerMenu ul li{list-style:none;position:relative;height:22px;padding:0}
+.innerMenu ul li a{color:inherit;text-decoration:none}
+.innerMenu ul li:hover,.innerMenu ul li.selected{background:0 to(#8DCEFE));filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#8DCEFE',EndColorStr='#5c98da');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#8DCEFE', EndColorStr='#5c98da')";border:1px solid 5px;-moz-border-radius:1px;-webkit-border-radius:1px}
+.innerMenu ul li .icon{border-right:1px solid #ddd;float:left;height:16px;text-align:center;width:16px;padding:2px 7px 4px 4px}
+.innerMenu ul li .item{border-left:1px solid #fff;color:#5C98DA;float:left;font-size:12px;height:14px;padding:4px 60px 4px 2px}
+.innerMenu ul li:hover .icon,.innerMenu ul li.selected .icon{border-right:1px solid #5c98da}
+.innerMenu ul li:hover .item,.innerMenu ul li.selected .item{border-left:1px solid #8dcefe;color:#000;text-shadow:0 1px 1px #eee}
+.innerMenu ul li:hover .shortcut,.innerMenu ul li.selected .shortcut{color:#000;text-shadow:0 1px 1px #eee}
+.innerMenu ul li .shortcut{color:#bbb;font-size:12px;height:18px;position:absolute;right:4px;text-shadow:0 1px 1px #ddd;top:4px;width:36px}
+.innerMenu ul li.spacer{height:0;padding:0}
+.innerMenu ul li.spacer .item{border-top:1px solid #ddd;border-bottom:1px solid #fff;height:0;left:29px;position:absolute;width:100%;margin:0;padding:0}
+.innerMenu ul li.spacer .icon{height:0;margin:0;padding:0}
+#masterHeader #userHeaderPanel .option a:hover,.selected span.focus{text-decoration:underline}
+.lastMenuSelected,.pageSelected,.selected{background:url(images/menubar-item-hover.png) repeat scroll 0 0 transparent!important}
+
+/*============================================================
+       Master menu link project pages to single screen
+       ------ Menu right side monitor icon ---------
+==============================================================*/
+.menuLink{float:right}
+.menuLink li{cursor:pointer;padding:6px 11px}
+
+/*====================================================
+                    DashBoard Page 
+=====================================================*/
+.dashboard{border-bottom-width:1px;bottom:31px;left:0;overflow:hidden;position:absolute;right:0;top:60px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABMCAIAAAAjsUpsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEVJREFUeNqMTlsKACAMku5/Z9sL1lpUH6JMJ4LkAGBQTdVxIwUQXVizNK+zd1Tecjfv1RHbnE/bcmPrKL8/XYufG6cAAwBFymotT/a6tQAAAABJRU5ErkJggg==) repeat-x scroll 0 0 #D8DCE0}
+/*------ Upper Panel ---------*/
+.upperPanel{position:absolute;left:0;right:0;top:0;height:50%}
+#sitePopup .lblSite,.popupTable label{width:73%}
+
+/*------ Bottom Panel ---------*/
+.bottomPanel{position:absolute;left:0;right:0;bottom:0;height:50%}
+/*----------------------------*/
+
+/*-------- Layout with 3 panels---------*/
+.panelSize{width:50%;position:absolute;bottom:0;top:0}
+.leftPanel{left:1px}
+.rightPanel{right:0}
+
+/*-----window size Start ------*/
+.fullWindow{height:100%;width:100%;position:absolute}
+.halfWindow{height:50%;width:100%;position:absolute}
+
+/*---window position--*/
+.upperWindow{top:0}
+.bottomWindow{bottom:0}
+/*------------------------------*/
+
+/*------- Analysis Panel ---------*/
+.listTable thead tr th.status{height:auto;padding:1px 0 6px 1px}
+.listTable thead tr th div.statuscontent{height:auto;padding-top:4px}
+/*--------------------------------*/
+
+/*-------------------Window Start---------------*/
+.smallWidth{width:33.3%;height:100%;position:absolute}
+.largeWidth{width:66.6%;height:100%;position:absolute}
+.size20{width:20%;height:100%;position:absolute}
+.size80{width:80%;height:100%;position:absolute}
+
+/*-----set each window position at Left, Middle, Right ----*/
+.left{left:1px}
+.middle{left:33.3%}
+.right{left:66.6%}
+
+/*---------------Window in each panel--------------*/
+.window{overflow:visible;position:absolute;background:#FFF;border-radius:5px 5px 5px 5px;-moz-border-radius:5px;-webkit-border-radius:5px 5px 5px 5px;box-shadow:3px 3px 6px #AAA;background-color:#444;-moz-box-shadow:3px 3px 6px #AAA;-webkit-box-shadow:3px 3px 6px #AAA;filter:progid:DXImageTransform.Microsoft.Shadow(color='#969696',Direction=135,Strength=3);zoom:1;bottom:4px;left:0;min-height:120px;min-width:120px;right:0;top:5px;margin:2px 3px}
+.innerWindow{-moz-border-radius:0 0 5px 3px;border-radius:0 0 5px 3px;bottom:0;left:0;position:absolute;right:0;top:54px;z-index:4}
+
+/*----------Titlebar Start-----------------*/
+.titlebar{border-left-width:1px;height:25px;left:0;position:absolute;right:0;top:0;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;-webkit-border-radius:5px 5px 0 0;background-color:#5590D2;background-image:0;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#61A7F2',endColorstr='#5590D2');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#61A7F2', endColorstr='#5590D2')";border-left-color:#86B7ED;border-left-style:solid}
+.titlebar .title{bottom:0;cursor:default;left:0;line-height:1;overflow:hidden;position:absolute;right:0;top:0;white-space:nowrap;font-size:small;color:#FFF;margin:6px 64px 0 7px}
+.titlebar .buttons{position:absolute;right:0;margin:5px}
+.titlebar .buttons .titlebarButton{cursor:pointer;float:left;height:15px;overflow:hidden;width:15px;margin:0 0 0 5px}
+.titlebar .buttons .close{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAMUlEQVR42mNgGAUM/yFgJprYTJAgMZpnIhuAzifJAJI04nIBWRrJdjLJLqAotEcAAADY0XuFLdX2NQAAAABJRU5ErkJggg==) no-repeat scroll 0 0 transparent}
+.titlebar .buttons .maximize{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAHElEQVR42mNgGAUM//EA2msmRXy4aCY7wEYAAAANZXONzd+/WAAAAABJRU5ErkJggg==) no-repeat scroll 0 0 transparent}
+.titlebar .buttons .minimize{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAF0lEQVR42mNgGAUM//EA2moeBaMAHQAA9d83yRzP5kIAAAAASUVORK5CYII=) no-repeat scroll 0 0 transparent}
+.titlebar .buttons .restore,.titlebar .buttons .restoreAll{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAIElEQVR42mNgGD7gPx5AkaFk20hbzfjEh6hm+sfv4AMAajGnWSVraboAAAAASUVORK5CYII=) no-repeat scroll 0 0 transparent;display:none}
+/*---------------------------------------*/
+
+/*----------- Menubar -------------*/
+.menubar{border-left-width:1px;height:auto;left:0;min-height:21px;position:relative;right:0;top:25px;background-color:#C9E2FC;background-image:none;border-left-color:#E4F1FE;border-left-style:solid;padding:4px}
+.menubar .refreshDiv{height:28px;width:12%;float:left;background:url(images/refresh.png);background-repeat:no-repeat;margin-top:3px}
+.menubar .refreshDiv label{left:9px;position:absolute;top:3.8px;font-size:13px;cursor:pointer}
+.menubar .refreshIcon{height:18px;width:18px;cursor:pointer;margin:2px 0 0 1px}
+.toolbar .refreshIcon{background:url(images/icons/refresh_white.png) no-repeat scroll 0 0 transparent;float:right;height:20px;width:21px;cursor:pointer;opacity:0.9;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=75);margin:3px 2px}
+.menubar .refreshDiv:hover{color:#111;background:url(images/refresh_hover.png);background-repeat:no-repeat}
+.menuText{border:1px solid #B8C6D9;color:#555;float:left;height:18px;opacity:0.8;filter:alpha(opacity=50);margin:-4px;padding:5px}
+
+/*--------------------------------------------*/
+
+/*------------------ Toolbar -----------------*/
+.toolbar{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAAcElEQVR42u3YYQYAIBiD4d3/KN0pSSRJJImkdZB947nA+3NwzlEZKD4LYAEsgHiA9x6V4d5LZTjnUBn23lSGtRaVYc5JZRhjUBl671SG1hqVodZKZSilUBlyzlSGlBKVIcZIZQghUBm891RmAdRv8Q8+U3zLFCicDAAAAABJRU5ErkJggg==) repeat-x scroll 0 0 transparent;height:24px;z-index:1}
+.btnAlignment{float:left!important}
+.toolbarButtonDisabled .toolbarText,.toolbarButton .toolbarText,.toolbarButtonPopup .toolbarText{margin-left:4px;margin-top:5px;float:left;margin-right:6px}
+.toolbarText a{color:inherit;outline:none;text-decoration:none}
+.toolbarButtonDisabled{opacity:0.5}
+.toolbarMore{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAWCAYAAAAinad/AAAALUlEQVR42mNgGAWjYBTQCqSlpf0HYWL5RBkGBKuJ4RMEIIXIignxR8EooCcAAG0wOzXQicwkAAAAAElFTkSuQmCC) no-repeat scroll 0 0 transparent;cursor:pointer;display:none;height:22px;position:absolute;right:0;top:0;width:20px}
+.toolbarDropdown{background:none repeat scroll 0 0 #FFF;display:none;position:absolute;right:0;top:77px;z-index:9999991;-moz-box-shadow:0 3px 10px #CCC;border-color:0 #DFDFDF #DFDFDF;border-style:none solid solid;border-width:0 1px 1px;margin:0;padding:0}
+.toolbarDropdown li{border-bottom:1px solid #eee;color:#333;font-size:11px;text-transform:capitalize;padding:2px 15px 2px 20px}
+.toolbarDropdown li:hover{background:#aaa}
+.toolbarDropdown li:hover a{color:#fff}
+.toolbarDropdown a{color:#333;outline:none;text-decoration:none}
+.toolbarText span{padding-right:2px}
+.toolbarTSext span img{vertical-align:top}
+.toolbarButton:hover{color:#111}
+.toolbarButton,.toolbarButtonPopup{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAWCAYAAADq8U2pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUeNpiWLVqFdf///+5WBgYGMSBmIEmDHYY4yWM8YIIEWIUPwIxAAIMABaGD2C3Iu2JAAAAAElFTkSuQmCC) no-repeat scroll center right transparent;cursor:pointer;display:inline;float:right;font-size:8pt;height:24px;margin-right:0;position:relative;padding:0 3px}
+.toolbarButton:active,.toolbarButtonSelected{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAYCAYAAAA20uedAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABASURBVCiRzdHBDQAwCAJAUPcfRGdylnYC+mlsyvcekMDMXBBhd0s0BQAQZtov0N2fd343aKiTpMTj2UMYVSVxA63KCUtNR9s1AAAAAElFTkSuQmCC) repeat-x scroll center right transparent}
+/*-----------------------toolbar End----------------------------*/
+
+/*----------------------content Start----------------------------*/
+/*-----------------without statusbar----------------------*/
+.content{background:none repeat scroll 0 0 #FFF;-moz-border-radius:0 0 5px 3px;border-radius:0 0 5px 3px;bottom:0;left:0;overflow:visible;position:absolute;right:0;top:24px;z-index:1}
+/*with statusbar*/
+.contentStatusbar{background:none repeat scroll 0 0 #FFF;-moz-border-radius:0 0 5px 3px;border-radius:0 0 5px 3px;bottom:36px;left:0;overflow-x:hidden;overflow-y:hidden;position:absolute;right:0;top:23px;z-index:0;padding:2px}
+
+/*--------- Dashboard design content--------*/
+.contentUpper{position:absolute;left:2px;right:2px;top:2px;height:49.9%}
+
+/*---upper content design--*/
+.innerLeft{position:absolute;width:50%;left:0;top:0;bottom:0;overflow:auto;border:1px solid #dedede}
+.innerRight{position:absolute;width:49.6%;right:0;top:0;bottom:0;border:1px solid #dedede;border-left:none;overflow:visible!important}
+.contentLower{position:absolute;left:0;right:0;bottom:0;height:48%;border-top:none}
+.chartContent{overflow-y:auto;position:absolute;left:0;right:0;bottom:0;top:24px;text-align:center;margin:auto;padding:10px 5px 5px}
+.full{top:0}
+/*full height width of chart*/
+
+.scrolable{overflow-y:auto}
+.withoutToolbar{border-top:1px solid #AAA;top:0}
+
+/*-----buttons bar-----*/
+.buttonsBar{position:absolute;top:0;left:0;right:0;height:30px;background:url(images/inner.gif) repeat scroll center bottom transparent;padding:0 3px}
+.buttonsBar input{height:22px;color:#444;font-size:11px;margin:3px -2px 0}
+.groupAlarms{position:absolute;bottom:0;left:0;right:0;top:30px;overflow:visible!important}
+/*--------- Dashboard design content End -----*/
+
+/*----------------------content End-------------------------------*/
+
+/*=======  statusbar ========*/
+.statusbar{background:#C9E2FC;bottom:0;height:25px;left:0;position:absolute;right:0;z-index:0;padding:6px}
+/*---------------------------------------Window End-----------------------------------------------------*/
+.clear{clear:both}
+.openPopup{cursor:pointer;float:right;padding-top:1px;position:relative;z-index:9;margin:1px 0 0 1px}
+.arrowIcon{background:url(images/IconComboBox.png) no-repeat scroll 0 0 transparent;background-position:center;float:right;height:15px;width:15px;border:none;z-index:9;margin:2px 4px 5px}
+.active{background:#FFF;border:1px solid #CCC}
+.popup{height:100px;position:absolute;right:-1px;top:21px;width:150px;border:1px solid #CCC;background:#FFF;z-index:5;border-top:none}
+
+/*--------------------------------------Dashboard End-------------------------------------------------*/
+
+/*-------------table design(value and properties)--------*/
+.themeTable{border-collapse:separate;font-size:12px;margin-left:0!important;width:100%;color:#454545}
+.themeTable tr{width:100%}
+.themeTable td{border-top:1px dotted #f9f9f9}
+/*TABLE TITLE HEADER*/
+.tableCelltitle{background:url(images/inner.gif) repeat-x scroll center bottom #eee;border:1px solid #DEDEDE;height:16px;font-weight:700;text-align:left;font-size:12px;color:#454545;width:97.5%;padding:3px 8px 6px!important}
+/*TABLE ROW HEADING*/
+.tableCelllabel{background:#F7F7F7;border:1px solid #dedede;border-top:none;font-size:11px;height:22px;padding-left:10px;padding-right:10px;text-align:right;white-space:nowrap;width:25%}
+/*TABLE ROW VALUE*/
+.tableCellinfo{background:#FFF;border-bottom:1px solid #dedede;border-left:1px solid #dedede;border-right:1px solid #dedede;padding-left:10px;padding-right:10px;text-align:left;font-size:11px;height:22px;width:25%}
+.tableCellinfo label{font-size:11px}
+
+/* text with left alignment */
+.tAlign{text-align:left;padding-right:8px;padding-left:8px}
+/*dashboard page analysis table*/
+
+#tblAnalysis tbody tr td{width:50%}
+/*-------------another table design----------*/
+
+.listTable{background:#FBFBF1;width:99%;font-size:12px;border:1px solid #DEDEDE;margin-top:1px;border-collapse:collapse;margin-left:2px!important;color:#454545}
+.listTable thead{background:url(images/inner.gif) repeat-x scroll center bottom #DDDCDD}
+.listTable thead tr th{color:#454545;font-size:12px;height:16px;padding:6px 6px 3px}
+.listTable thead tr th div{height:15px;overflow:hidden;font-size:11px}
+.listTable tbody tr td{border:1px solid #dedede;height:21px}
+.listTable tbody tr td div{padding-left:2px}
+
+/*...............code added by samta..................*/
+.tableHead{width:100%;overflow:hidden;border-left:1px solid #eee;border-right:1px solid #eee}
+.tableBody{height:165px;width:100%;overflow-y:scroll;overflow-x:hidden}
+
+/*contain table data for camera table on dashboard page*/
+.cameraTableBody{overflow-y:scroll;overflow-x:hidden;position:absolute;top:24px;left:0;right:0;bottom:0;border-top:1px solid #cdcdcd}
+.tableBody .tableStyle tbody tr{color:#454545}
+.tableStyle tr.tableSubHead{background:none repeat scroll 0 0 #EEE!important;font-size:12px;font-weight:700;color:#454545}
+.tableStyle tr.tableSubHead th{text-align:left;height:24px;font-size:11px;border-top:1px solid #d4d4d4;padding:2px 5px}
+
+/*----table design------*/
+.tableStyle{background:#fefef2;width:100%;font-size:12px;margin-top:0;border-collapse:collapse;margin-left:0!important;border:1px solid #dedede;color:#454545}
+.tableStyle thead tr{background-image:url(images/inner.gif);background-repeat:repeat-x;background-position:bottom;text-align:left;color:#454545;padding:3px 5px 6px}
+.tableStyle thead th{text-align:left;font-size:12px;padding:5px 5px 6px}
+.tableStyle thead th div{font-size:11px}
+.tableStyle tr td{border-top:1px solid #dedede;font-size:11px;padding:3px 5px}
+.tableStyle tbody tr:hover{background:#ffd}
+.liveData{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAgtJREFUeNqcUz1vE0EQfXu357XucjanEOTEInRIFqKwqFzkHyQdLgINEg2WQO4QoqQARGdRGCEh0SCKRKJMky6Fq/S0pMESsRzsXIzvk5n1+WRMwcdIzzu3O2923sxaNJvNHQDr+D/7KpMk2eh2u2/CMPwnpmVZaLVaDziBCIIA2y8OkChXHwohIAwDBq2maWoYBJn5KzJC9+5NMFfGcWwQEFkObtRqf3X799EIzGEuJxA6QRThwj9HHEx1kCElEtpb9s2CgqA1SyAkEQ0m88b4bIi3d67rwHvvjvH+/i3tN18fYe/R1mz/w2e4JU9fyNy8AtYdRiEGg4EOHJ/7ua9sJ/ftchlF+v6tAm5OIkw8/HRCDZNwr6zj8eEZpCVxaeMqnh1T+SSlvObBIhFRFMwq4B/OZtJYTFWE65aIZEEWCjOwz2dEZvBkQFOL40meQEtYW7EQpqlukB4frZJBezRrmCyTfDYn/YGs8TMJKR282tnUMiTflM1bvwcCn8dxMNetwcZcUa/Xdylgc3nW7Xb75eJ3p9N5shxDyU+owvRjmpXGRq+LMz91XfeX4Ol0Si2Qzw16oYsm+/0+GHNTSsHzPFWtVmHbtpY0mUwwHA4VgRPlsZVKRfcMWb9WCZcJRcdxbjcajWuLN/V6vS++7++TGxC+EU65DfMEXJedQf7hr8Ad9AkXrPinAAMARd8Js/MlOmUAAAAASUVORK5CYII=);background-repeat:no-repeat;cursor:pointer;margin:0 0 0 15px;padding:1px 9px}
+/*--site panel- camera and group details table head---*/
+.cameraDetailsHeading,.groupDetailsHeading{border:1px solid #DEDEDE}
+.tableStyleHead{margin:6px 0 0}
+#segmentDetailsWrapper{width:99.6%;margin:0 1px 0 2px}
+.clear{clear:both}
+.openPopup{cursor:pointer;float:right;height:28px;position:relative;z-index:9;border:1px solid transparent;width:auto;margin:-4px -4px 0 1px}
+.openPopup label{font-size:13px;float:left;margin:3px 0 4px 4px;padding:0}
+.arrowIcon{background:url(images/IconComboBox.png) no-repeat scroll 0 0 transparent;background-position:center;float:right!important;height:15px;width:15px;z-index:9;margin:3px 5px 2px 3px}
+.active{background:#F9F9F9;border:1px solid #aaa}
+.showPopup{position:absolute;right:-1px;overflow:hidden;width:150px;background:#FFF;z-index:99;top:29px;box-shadow:0 2px 4px rgba(0,0,0,0.4);border:1px solid #aaa;border-top:none}
+.popupTable{width:100%;height:100%;border-collapse:collapse;overflow-y:auto}
+.popupTable tbody{top:0;bottom:30px;left:0;right:0;padding:1px 5px}
+.popupTable tbody tr{width:100%}
+.popupTable tbody tr td input[type=checkbox]{margin:3px 5px}
+.popupTable tbody tr td{border-bottom:1px solid #f5f5f5}
+.popupTable tbody tr td label{cursor:pointer;font-size:12px;margin:0 0 4px 4px}
+.popupTable tfoot{background:none repeat scroll 0 0 #C9E2FC;bottom:0;height:32px;left:0;right:0;padding:3px}
+.popupTable tfoot tr input{height:22px;margin:0 2px 1px 3px}
+.popupTable tfoot tr td{border-top:1px solid #E2E2E2;background:#C9E2FC}
+.popupData{height:133px;width:100%;overflow-y:auto;overflow-x:hidden;z-index:55}
+.popupTable tbody tr td:hover{background-color:#f5f5f5}
+.popupFoot{height:20px;width:100%;border-top:1px solid #e2e2e2;margin:0;padding:0}
+.popupFoot:hover{background:#c9e2fc}
+.popupFoot label{font-size:13px;font-weight:700;color:#444;cursor:pointer;margin:1px 2px 3px 5px}
+.popupHead{border-bottom:1px solid #D2D2D2;width:100%;max-height:110px;overflow:auto}
+.popupData input,.popupTable tbody tr td input[type=radio]{float:left}
+/*popups footer*/
+.popupfootDiv{background:none repeat scroll 0 0 #f7f7f7;border-bottom:1px solid #EEE;border-top:1px solid #EEE;height:26px;width:100%}
+.popupfootDiv Div{cursor:pointer;display:inline-block;font-size:12px;height:85%;vertical-align:bottom;width:89%;padding:5px 7px}
+.popupfootDiv:hover{-moz-border-bottom-colors:none;-moz-border-image:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;background:none repeat scroll 0 0 #E6F1FD;border-color:#C9E2FC 0;border-style:solid none;border-width:1px medium}
+
+/*--------------------Loading style for all panels Start-----------------------------------*/
+.innerLeftLoading{background:url(../images/loading.gif) no-repeat;background-position:center;border:1px solid #aaa;bottom:0;left:0;overflow:auto;position:absolute;top:0;width:50%;display:none;opacity:0.8;filter:alpha(opacity=70)}
+.innerRightLoading{background:url(../images/loading.gif) no-repeat;background-position:center;border:1px solid #aaa;bottom:0;overflow:auto;position:absolute;right:0;top:0;width:100%;opacity:0.8;filter:alpha(opacity=70);display:none}
+.leftLowerLoading{background:url(../images/loading.gif) no-repeat;background-position:center;border:1px solid #aaa;bottom:0;left:0;overflow-y:auto;position:absolute;right:0;text-align:center;top:0;opacity:0.8;filter:alpha(opacity=70);display:none;margin:auto;padding:10px 5px 5px}
+.rightUpperLoading,.rightLowerLoading{background:url(../images/loading.gif) no-repeat;background-position:center;border:1px solid #aaa;bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:0;z-index:1;opacity:0.8;filter:alpha(opacity=70);display:none;padding:2px}
+/*--------------------Loading style for all panels End------------------------------------*/
+
+/*---- For Dashboard Charts ------*/
+.jqplot-xaxis-label{font-size:11px}
+.jqplot-point-label{z-index:1001!important;font-size:12px!important}
+.jqplot-yaxis-label{width:12px}
+.jqplot-highlighter-tooltip{background:#60a3ed!important;border:1px solid #eee;font-weight:700;font-size:12px!important;color:#FFF;z-index:99999}
+.jqplot-highlighter-tooltip table.jqplot-highlighter tr{width:100%}
+.jqplot-highlighter-tooltip table.jqplot-highlighter tr td{display:inline}
+.jqplot-target{overflow:visible}
+.jqplot-target canvas{z-index:999!important;overflow:visible}
+.jqplot-xaxis{overflow:hidden!important}
+
+
+/*--------------------configuration page...... required CSS-------------------------------------*/
+.panelTab{display:none}
+
+/*label design*/
+.fieldLabelIcon{opacity:0.6;margin:1px;padding:1px 1px 1px 5px}
+.fieldLabelIcon span.fGroup{background:url(images/label.png) no-repeat;display:inline-block;padding:0 8px 1px}
+.fieldLabelIcon span.fLabel{background:url(images/f_folder.png) no-repeat;display:inline-block;padding:0 10px 1px}
+.fieldLabelIcon span.fNotification{background:url(images/f_notification.png) no-repeat;display:inline-block;padding:0 10px 1px}
+.fieldLabelIcon img{margin:4px 0 3px}
+
+/*popup design for field for field head, search, content, foot*/
+.fieldDescription{background:#FFF;border:1px solid #e2e2e2;position:absolute;height:190px;top:21px;width:250px;left:-2px;z-index:6;cursor:default;box-shadow:0 2px 4px rgba(0,0,0,0.3)}
+.fieldLabel{border:1px solid #c3c3c3;position:absolute;left:0;right:0;top:0;bottom:0;color:#555;z-index:6}
+.fieldLabel .fHead,.fieldLabel .fsearch,.fieldLabel .fFoot{height:20px;width:100%;padding:3px 0}
+.fieldLabel .fsearch{padding-top:1px}
+.fieldLabel .fsearch .search{width:97%!important;margin:0 0 0 4px;padding:0 0 2px}
+.fieldLabel .fList{max-height:103px;width:100%;border-top:1px solid #e2e2e2;overflow-y:auto;overflow-x:hidden}
+.fieldLabel .fHead label{font-size:13px}
+.fieldLabel .fList label{font-size:12px}
+.fieldLabel .fListContent{border-bottom:1px solid transparent;border-top:1px solid transparent;padding:0}
+.fieldLabel .fListContent label{cursor:pointer;margin-left:0;vertical-align:text-bottom;width:160px}
+.fieldLabel .fListContent input[type=radio]{cursor:pointer}
+.fieldLabel .fFoot{margin-top:3px;margin-bottom:3px;border-bottom:1px solid transparent;cursor:pointer;border-top:1px solid #DEDEDE;height:20px}
+
+/*chrome specific*/
+.fieldLabel .fFoot .apply{font-size:14px!important;color:#444}
+.fieldLabel .fFoot label{font-size:12px;height:17px;margin-left:0;margin-top:0;width:96%;cursor:pointer;border-bottom:1px solid transparent;border-top:1px solid transparent;padding:3px 5px}
+
+/*arrow icon in toolbar buttons in sensor page*/
+.field .toolbarText .downArrow{vertical-align:baseline;opacity:0.7;filter:alpha(opacity=70);margin:0 0 0 3px}
+.fieldLabel .fListContent:hover{border-bottom:1px solid #eee;border-top:1px solid #eee;background:#f5f5f5;cursor:pointer}
+.fieldLabel .fFoot label:hover{background:#e6f1fd;border:1px solid #c9e2fc;border-left:none;border-right:none}
+.fieldActive{background-image:0;background:0 to(#F5F5F5));filter:progid:DXImageTransform.Microsoft.Gradient(endColorstr='#F2F2F2',startColorstr='#F5F5F5',gradientType='0');border:1px solid #999;border-left:none;border-right:none;box-shadow:2px 2px 4px rgba(0,0,0,0.1) inset;-moz-box-shadow:2px 2px 4px rgba(0,0,0,0.1) inset}
+
+/*-----------------------toolbar RightSide div Start----------------------------*/
+.rightsideDiv{float:right;display:none}
+.buttonDiv{display:inline-block;float:left;height:18px;width:14px;margin:4px 0 0}
+.updateIcon{background:url(images/icons/update.png) no-repeat scroll 0 0 transparent}
+.resetIcon{background:url(images/icons/reset.png) no-repeat scroll 0 0 transparent}
+.cancelIcon{background:url(images/icons/cancel.png) no-repeat scroll 0 0 transparent}
+/*-----------------------toolbar  Right Side div End----------------------------*/
+
+/*------------------------*/
+/*----search box design----*/
+/*-------search box---------*/
+.search{float:left;height:24px;min-width:60px;position:relative;width:50%}
+.search .lftDsgn{background:url(images/search_icon/Blank_textbox_001.png) no-repeat scroll 0 0 transparent;height:24px;left:-1px;overflow:hidden;position:absolute;width:6px}
+.search .middleDsgn{background:url(images/search_icon/Blank_textbox_005.png) repeat-x scroll 0 0 transparent;border-top:1px solid #EEE;height:22px;left:3px;overflow:hidden;position:absolute;right:16px}
+.search .middleDsgn input:focus{outline:none}
+.search .middleDsgn input{background:none repeat scroll 0 0 transparent;border:0 none!important;height:15px;width:100%;padding-top:1px;outline:none;margin:2px 0 0}
+.search .rightDsgn{background:url(images/search_icon/Blank_textbox_004.png) no-repeat scroll 0 0 transparent;height:24px;overflow:hidden;position:absolute;right:0;width:20px}
+.search .crossDsgn{background:url(images/search_icon/Blank_textbox_003.png) no-repeat scroll 0 0 transparent;cursor:pointer;height:24px;overflow:hidden;position:absolute;right:0;width:25px}
+.search .crossDsgn:hover{background:url(images/search_icon/cross-hover.png) no-repeat scroll 0 0 transparent}
+.searchImg{background:url(images/search_icon/Search.png) no-repeat scroll 0 0 transparent!important;margin:4px 3px 2px -9px}
+/*--End-- of search box*/
+/*--End-- of field deesign*/
+/*=======================================================================*/
+/*-----selected row in tree-view structure*/
+.treeview li{font-size:12px;margin:0 0 1px!important}
+.activeTreeTab{color:#3B76B5!important;font-size:13px;font-weight:700}
+.treeview .hitarea{margin-top:1px;line-height:0!important}
+#treeview li span{cursor:pointer!important;color:#4787CC;padding:0 40% 0 0}
+#treeview li span:hover{color:#5FA0E8!important;text-decoration:underline}
+/*=======================================================================*/
+/*Code added by samta for Camera Table --*/
+.cameraGroupDetails{bottom:0;width:99.6%;margin:5px 1px 5px 2px}
+.cameraDetails{float:left;width:49.9%}
+.groupDetails{float:right;height:118px;width:49.9%}
+.contentDescripation{background:none repeat scroll 0 0 #FFF;-moz-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;left:0;overflow-x:hidden;overflow-y:auto;position:absolute;right:0;padding-left:2px;padding-right:2px;display:none;top:0;bottom:1px}
+/*--End of code by samta---*/
+/**--------------Default button style--------------**/
+.yoButtons{-moz-border-radius:3px;background-color:#f8f8f8;background-image:url(images/button-gradient.gif);background-position:center top;background-repeat:repeat-x;color:#444;cursor:pointer;display:inline;float:none;font-family:Verdana, "Helvetica Neue" ,Helvetica,Arial,sans-serif;font-size:11px;line-height:100%;min-width:51px;position:relative;text-align:center;text-decoration:none;text-shadow:0 1px rgba(255,255,255,0.75);width:auto;border-color:#D3D3D3 #B2B2B2 #BBB #D4D4D4;border-style:solid;border-width:1px;margin:0;padding:2px 5px 3px}
+.yoButtons:hover{background-color:#F7F7F7;color:#386FAA;box-shadow:0 1px 2px rgba(0,0,0,0.15);border-color:#aaa}
+.yoButtons:active{background-color:#e5e5e5;color:#333;border-color:#4991DD}
+/*-------------------------------------Notification Start----------------------------------------*/
+/*NOTIFICATION BLOG DESIGN*/
+
+.monitoringNotification{border:1px solid #D0D0E8!important;background-color:#FBFBF1;font-size:12px;margin-right:-2px;margin-top:3px;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding:5px}
+.monitoringNotification:hover{border:1px solid #64c3da;color:#4E4E9C}
+/*NOTIFICATION HEADER*/
+.notificationHeading{border-bottom:1px solid #E7E7E7;font-weight:700;font-size:13px;height:20px}
+
+/*RIGHT ICON AND ACCEPT BUTTON CONTAINER*/
+.notificationHeading div{color:#1D5BA0;text-shadow:0 1px 1px #9DDBF0;float:right;font-size:10px;border:1px solid #C9E2FC;margin-right:4px;margin-top:-1px;font-weight:400;cursor:pointer;letter-spacing:1px;background:0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFFFF',endColorstr='#8C9FE7');padding:0 2px}
+.notificationHeading div:hover{border:1px solid #5C9FE7;color:#0C2AA0}
+.notificationHeading div:active{border:1px solid #9DDBF0;color:#FFF;background:0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#C9E2FC',endColorstr='#5C9FE7')}
+.notificationHeading label{display:inline-block;font-size:13px;font-weight:700;vertical-align:top;padding:0}
+.notificationHeading input[type=checkbox]{vertical-align:super;margin:2px 0 0}
+
+/*CONTAIN NOTIFICATION DESCRIPTION*/
+.notificationContent{float:left;width:100%;margin:5px 0 3px}
+.notificationContent label{font-size:11px;margin-left:2px}
+
+/*NOTIFICATON BUTTONS COTAINER*/
+.notificationFooter{float:right;border-collapse:collapse;border-spacing:0;position:absolute;right:10px;margin:3px 0}
+
+/*SELECTED NOTIFICATION*/
+.monitoringNotificationSelected{background-color:#DFe9ef;border:1px solid #a2c9f5;border-bottom:none}
+.monitoringNotificationSelected:hover{border-bottom:none}
+/*selected notification heading style*/
+
+.monitoringNotificationSelected .notificationHeading{color:#06C;border-bottom:1px solid #FFF}
+
+/*selected notification button style*/
+.monitoringNotificationSelected .notificationIcon{border-left:1px solid #a2c9f5;border-right:1px solid #a2c9f5;border-color:#a2c9f5;border-style:solid;border-width:1px}
+
+/*ICONS IN NOTIFICATION BUTTONS IN ALARM PANEL*/
+.notificationIcon{background:0 repeat scroll 0 0 transparent;border-left:1px solid #BBB;border-right:1px solid #BBB;color:#000;cursor:pointer;float:left;outline:medium none;text-align:center;vertical-align:middle;white-space:nowrap;border-color:#CCC #BBB #A0A0A0;border-style:solid;border-width:1px;margin:1px 0;padding:3px 6px}
+
+/*NOTIFICATION BUTTON HOVER AND ACTIVE EFFECT*/
+.notificationIcon:hover{border:1px solid #818181}
+.notificationIcon:active{border:1px solid #616161;background:#FBFBFB}
+
+/*NOTIFICATION BUTTON ICON IN SPAN*/
+.iconShow{padding:0 8px 3px}
+
+/*ICONS IN NOTIFICATION BUTTON*/
+
+.liveFeed{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAgtJREFUeNqcUz1vE0EQfXu357XucjanEOTEInRIFqKwqFzkHyQdLgINEg2WQO4QoqQARGdRGCEh0SCKRKJMky6Fq/S0pMESsRzsXIzvk5n1+WRMwcdIzzu3O2923sxaNJvNHQDr+D/7KpMk2eh2u2/CMPwnpmVZaLVaDziBCIIA2y8OkChXHwohIAwDBq2maWoYBJn5KzJC9+5NMFfGcWwQEFkObtRqf3X799EIzGEuJxA6QRThwj9HHEx1kCElEtpb9s2CgqA1SyAkEQ0m88b4bIi3d67rwHvvjvH+/i3tN18fYe/R1mz/w2e4JU9fyNy8AtYdRiEGg4EOHJ/7ua9sJ/ftchlF+v6tAm5OIkw8/HRCDZNwr6zj8eEZpCVxaeMqnh1T+SSlvObBIhFRFMwq4B/OZtJYTFWE65aIZEEWCjOwz2dEZvBkQFOL40meQEtYW7EQpqlukB4frZJBezRrmCyTfDYn/YGs8TMJKR282tnUMiTflM1bvwcCn8dxMNetwcZcUa/Xdylgc3nW7Xb75eJ3p9N5shxDyU+owvRjmpXGRq+LMz91XfeX4Ol0Si2Qzw16oYsm+/0+GHNTSsHzPFWtVmHbtpY0mUwwHA4VgRPlsZVKRfcMWb9WCZcJRcdxbjcajWuLN/V6vS++7++TGxC+EU65DfMEXJedQf7hr8Ad9AkXrPinAAMARd8Js/MlOmUAAAAASUVORK5CYII=) no-repeat}
+.history{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FJREFUeNpsU91rI1UcPfORJpNJ2kmapkk2afoxaW23S5DUhkArahdlRbqI0IofL/uwgviy+A+o4IOgC4vgi+BLH2Rhsaj4UFAW6+p2jd0ldW0jzbZpkqmdTr6/JpPJZJzdVlHxwIF7f/eew7k/fpeYvoS/oWkUVFWDnWXCfU7ufKdtd+W2nss0G/qDZqP+s66jbDLR+CdoECeLTgegQI89Mx+9FhgPXJCUClnN03g2chFqx4y9/exR/M7WJ7nsHx8aJjJBnAgp1zmzISZh6bFMv3lp+dvYHD9TlFTC1ZmEQz6DAOvH2JlBeDz9tonpiaebshLLZY++IUnikQnVy/ugKj2OV5cX1qIx/2j2vg3zvstYnF2Gv3cEQx4nouFxcD06GvUGgiF+pFCqTgk58TpJkjrFDHnAjwXefuqCf6mQtiPCvQZfvwdWGwPWxoLjuEdRnVwvfE4WUr4Ezusd39nZy9brzXuUb5YO81Mj7xM2pZ+TJxCdehJfff0lisUieJ4/ba4G3eggyzIgNBVlWUO+0uwXj/K/UuEXet9iRu0vVpQGGILGY+4IpifDuHr1I+zu7iIYDMLhcKDb7UI3KDfryIgVNDXSeSiIKUqhztcGfOxlaFXM0M/jHD8De58N/uFhrK6u4u7mJgqFAkKhECqVCm79sI6qQkAhmZ50WrhPy9VAy4OIxrNtKjI5hy7RgWLE5c1mzHu9uJ3PY2VlBfF4HBcXFzE6Ooa60IJabhkv01p0W61mWg2r4B18Yoi2WGCx2aAY0Ws3b+LlK1fwit0OTVWRN4wI6Gi2AdJCQxRzQrlUS5AE2VPdTu6tVTsakrkiFEFAbX0dfUtLsBkJrIYpwzAIBALGLHiQEkqQdRo7v2fWanXle4qABknY23cPT74+4Bk0lyUJoYV5cG43Wo06tK4Gq5VFW2nhx3spSBqDXxKp+nc3PntDKaT2Ka0holPNHacfpAnf2diC1eXGoViEbsx2MplEThDRMv7I7a0DSB0G2/vH+Pzau+/VMhs3dPnYGP9TyGUhuZ1INGhH8HHrgN8iVtuotEmUVRMOyiokhcZPG3cr1z9+54PyweanhqT+UEfg3+AIk33Wf3bupVA4GnN5fO6HRenoUEwl7mzkfrv1ha7W4kapZFD/P4O/YDLoMI77TrZ65VSk/vfinwIMAHjohvEdnszOAAAAAElFTkSuQmCC) no-repeat}
+.messagebtn{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNpsk89LVFEUxz/vveu8mXEyR62mKYtUJHOTQdoiEwQhWlS0a9smCoJ2rfofXFTU1j8giCAQihZRiVQI4SYqxRKizMxxxnm/O+fNFA504TNvOOf7Pfec+95l+k1CkiRGKAu20CtYgiO4wnVhpMlwk5HbL1PfGeNYvLizQHfVo5bAqmWxmSR8LXewr5il20uwlzc4GPrkcNhLTI9oShaYu+/4YL7XOL3uwa1R+O1xAqgLXr6NbMbBjRKqQ52MJrHYLSmS4O52cabfQqVOn6nUI471OLz/Aef6RIKIGvxdhSb/1pPP0N8JH9eirB0HPlOHYf4bPF9pCIL4/+hSjWrVE4nXDuRHq10YgNlleLVUw7HFELWiMc2pRrXqCdICvs+mD0e7ZIR+uP/6F4urVWIZZica05xqVKse9aYFfGmvEsBwN1wcPcDNmQXWq1ELGtOcalSrHvWaIAqJosZ8lrT5cG6FK+dPcfXB3M5zS2OaG790iKh5Huo1ge+l1XIG7i3AjYkSxYLDz/HjLQVOlh0GOkqp5pqktkPtwMOE2obsPLMIY2XYX8wQSkcTg+0tBVSjubGoob08BKk3CAIef4KS6AeLsOU1DDm7xU9ddiRsaNZqpB712nXPx83A5BF5r/p9yijGgURPnwb6X2OaU41q1aNe40qisL3Gs0Vb2hQcxUqftm2lu8dxImPFQvMZxxTsGPWayaGuL4/mlpKca6K8a9rasxnyWZPkM8a4GbMl/nbPD2s1P0xq9XBXte7HNS+sbHuhetv02k7p5RE2hF5BX6pcTHqEp8KEMN+8ZGeFqjAr7BHKfwQYABoqVj+Q8nhBAAAAAElFTkSuQmCC) no-repeat}
+.pingbtn{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAplJREFUeNqk00lMU0EYAOB/lre0lPJoLbSytCUoBKIxuFQlxsTEixIOelBcDiQejVyNMTEaCTEx8WDiwZNnDR6NIsiNakw8oBBZjAErLVZKt/eY13mLrVD0nflPc5j5/n/+mR/Ztg07CVpdvIuvAMUELMsEyygB8bqgpskHUzp9qnJrQDdBR/8dJMhO3m6j+7YBjBEqcbPBNE1kmRaYySxkExni97hG9GBj6LsKfbppQxXxSwhV8m8DE5PLLz5Pp/oBONWZCqpaBKUGf+u/fHxo3ePDRc0Co3zbKrDGbBPA9Q+YmVnt293kHu3sqH9WLDLAlmE07g2yeG1geCmpnRTJ5lG0JaiG5eyBbemmxlA8r/I3x2IRoA2K/9GX3NhKIt/jEQnwrX25DQPKtwWKbOQAmF4EnDVkpa4Z5Eig/ebrpVdpZuzxygQK+uaejGrAmajnQTKvB+Mr7KoD0JkGXjdltRF/+43R+fFfKg97XRSKJaNSOKTzDM53+R63LczORgK+hyQaWPzb/Cpgch0RahsfU6Xo/HImbHNebqQORZXBciID5zq898LLi+NTn1afCAWNnw6K9x2ArnN0YH+j98qRXW8HDocu5FJZnlvXIPljDQZjoZG+BnxnbjYZqvUpiNoESOI3OADLtlGd4oaIT4D+Lt/zS72tF7VUpnCtt3V46FT41sJ0AgiVQZJkmwgSEGY6X6GCsQ2OkWFCt8eG4MH6l7Hmng9HWzw/cSEPJ3rbILnKMAMJYywgRAUnoCju/Pjk3N2vC+lBTAiIAgWXJPB5TCihIpIlCYQ6pRlzpHm8bi7L1AnEDkWvj03MnE2n83I5BVQQQspftVyuKLpsSXKBIMrvO9sDEx3dLZplbQ4h2uk0Ythh/BFgACBwEpOO6TrAAAAAAElFTkSuQmCC) no-repeat}
+.ackAlarm{background:url(images/icons/tick_icon1.png) no-repeat;padding:0 5px 3px}
+
+/*notification pink color design*/
+.geofenceViolationAlarm{background:#F8DEDF}
+.geofenceViolationAlarm .notificationHeading{border-bottom:1px solid #F5F5F5}
+.geofenceViolationAlarm:hover{color:#a94c4c}
+
+/*notification yellow color design*/
+.fuelAlarm{background:#FBFBF1}
+.fuelAlarm .notificationHeading{border-bottom:1px solid #E3E3E3}
+/*notification blue color design*/
+.tempratureAlarm{background:#dbecff}
+.tempratureAlarm:hover{color:#4c6fcd}
+.tempratureAlarm .notificationHeading{border-bottom:1px solid #fff}
+
+/*notification green color design*/
+.trackViolationAlarm{background:#d4ffcd}
+.trackViolationAlarm:hover{color:#258815}
+.trackViolationAlarm .notificationHeading{border-bottom:1px solid #E3E3E3}
+
+/*notification red color design*/
+.overSpeedingAlarm{background:#f6a7aa}
+.overSpeedingAlarm:hover{color:#871414}
+.overSpeedingAlarm .notificationHeading{border-bottom:1px solid #f9f9f9}
+/*notification red color design end*/
+
+/*select box effect*/
+.selectListBox{color:#444;margin:0 0 0 2px;padding:1px}
+/*select box effect*/
+
+/*table style for ui popups [acknowledge]*/
+.uiPopupTable{color:#444}
+.uiPopupTable thead{border-bottom:1px solid #dedede}
+.uiPopupTable input[type=button]{width:100%}
+.uiPopupTableHead thead td{border-bottom:1px solid #bbb}
+.jqplot-xaxis-label{font-size:10px!important}
+.jqplot-axis canvas .jqplot-yaxis-label,.jqplot-yaxis-label{font-size:10px!important;width:12px;color:#444}
+/*table style for ui popups [acknowledge]*/
+
+/*..........................code added by samta for login form........................*/
+#loginform h3.login{background-color:#71ADED;font-size:19px;height:34px;left:-2px;margin-top:25px;position:relative;width:396px;color:#efefef;padding:10px 0 10px 25px}
+#loginform p{font-size:13px;line-height:20px;margin-bottom:18px}
+#loginform label.login{font-size:14px}
+.usernamepassword{padding:5px 3px!important}
+#loginform label{display:inline-block;font-size:12px;vertical-align:bottom;width:112px;padding:3px 3px 3px 0}
+#loginform input.login{font-size:14px;height:17px;position:relative;right:10px;width:55%;border:1px solid #e2e2e2;padding:4px}
+#loginform input.login[type=text]:hover{border-top:1px solid #71aded;border-left:1px solid #a6ccf4;border-right:1px solid #a6ccf4;border-bottom:1px solid #a6ccf4}
+#loginform input.login:focus{border-top:1px solid #71aded;border-left:1px solid #a6ccf4;border-right:1px solid #a6ccf4;border-bottom:1px solid #a6ccf4;outline:none}
+#loginform{border:1px solid #71ADED;box-shadow:1px 1px 14px #71ADED;-webkit-box-shadow:1px 1px 14px #71aded;-moz-box-shadow:1px 1px 14px #71aded;top:50%;left:50%;position:absolute;padding-bottom:43px;text-align:center;width:419px;height:auto;behavior:url(../../Scripts/PIE.htc);background:#fff;margin:-127px auto auto -210px}
+#loginform input,textarea,select{margin-top:4px;padding:3px 0}
+#loginform .check{float:left;margin-top:13px}
+#loginform .remember{float:left;margin-left:0!important;padding:11px 0!important}
+#loginform #n-container{left:-2px;position:relative;top:8px}
+#loginform #submit{padding-top:0}
+#loginform .editor-label{display:inline-block;left:14px;position:relative;width:327px}
+.errorMsg{left:56px;text-align:center;top:-8px}
+.rectangle{background:none repeat scroll 0 0 #5999DF;box-shadow:0 0 4px rgba(0,0,0,0.55);float:left;height:50px;left:-16px;position:relative;top:18px;width:450px;z-index:100}
+.rectangle h2{color:#FFF;font-size:19px;text-align:center;text-shadow:1px 1px 2px rgba(0,0,0,0.2)}
+.triangle-l{height:0;left:-30px;position:relative;top:52px;width:0;z-index:1;border-color:transparent #7D90A3 transparent transparent;border-style:solid;border-width:15px}
+.triangle-r{height:0;left:419px;position:relative;top:21px;width:0;z-index:1;border-color:transparent transparent transparent #7D90A3;border-style:solid;border-width:15px}
+.loginbtn{float:right;background:#5999DF;height:27px!important;width:78px;color:#fff;margin:-2px 4px}
+.forgotPassword{float:left;position:absolute;left:3px;top:41px;cursor:pointer;color:#5999DF;text-decoration:underline}
+#dialog_link{position:relative;text-decoration:none;padding:.4em 2em .4em 20px}
+input.button,a.button{background:url(images/rep1.png) repeat-x scroll 0 0 transparent;border:1px solid #91C8FF;color:#FFF!important}
+a.button{display:inline-block;margin-right:10px;position:relative;text-decoration:none;width:auto;padding:3px 10px 3px 0}
+.button{font-size:8.5pt}
+.info{position:relative;left:0}
+#loginform input#Cancel.login,#loginform input#submitButton.login,#loginform input#submit.login,.loginbtn{background:none repeat scroll 0 0 #5999DF;color:#FFF;float:right;font-size:14px;height:32px;width:auto;border:1px solid transparent;margin:3px 7px;padding:3px 11px 7px}
+/* ======================================
+      Start [ Account/ChangePassowrd ]
+   ====================================== */
+#loginform .changePasswrd{display:inline-block;vertical-align:bottom;width:136px!important;white-space:nowrap;text-align:left;padding:3px 37px 3px 0}
+#loginform .changePasswordContainer{position:relative!important;top:14px!important;left:4px!important}
+#loginform .changePasswordContainer label.error{display:inline;margin-right:-16px;margin-left:0!important;line-height:27px}
+#loginform label{font-size:14px!important}
+#loginform .changePasswordContainer p input.error{color:#444!important}
+#loginform .changePasswordContainer p input.login{width:261px;margin-bottom:3px}
+
+/*---- END --------------------------*/
+
+/* ======================================
+      Start [ Forgot/ChangePassowrd ]
+   ====================================== */
+#forgotContainer{display:inline-block;height:20%;width:419px}
+#forgotContainer .innerContainer{margin-top:30px}
+#forgotContainer .editor-label{height:36px}
+#forgotContainer .btnHover{background:none repeat scroll 0 0 #5999DF;color:#FFF;float:right;font-size:12px;height:32px;width:auto;border:1px solid transparent;margin:3px 7px;padding:3px 9px 7px}
+#forgotContainer .btnHover:hover{background:none repeat scroll 0 0 #5999DF;color:#FFF;float:right;font-size:12px;border:1px solid transparent}
+
+/*---- END --------------------------*/
+
+/* ======================================
+      Start [ Map/Index ]
+   ====================================== */
+
+/* {{...Notification Panel...}} */
+.fixHeader{width:100%;background-image:url(images/inner.gif);background-repeat:repeat-x;background-position:center bottom;min-height:23px;padding:2px 0 3px;overflow:hidden;}
+.fixHeader .reminder{text-align:center;width:3%!important;}
+.fixHeader .contentpart span img{padding:3px 7px}
+.middleContainer{width:100%;height:163px;overflow-x:hidden;overflow-y:scroll;background:#FBFBF1;color:#444;font-size:12px}
+.middleContainer .contentpartcontainer{width:100%;height:auto;cursor:pointer;border-bottom:1px solid #dedede}
+.middleContainer .contentpartcontainer:hover{background:#ffffd6;border-bottom:1px solid #dedede}
+.middleContainer .contentpartcontainer.active{background:#fffde1;border-top:none!important;border-left:none!important}
+.middleContainer .contentpartcontainer .contentpart span img{padding:7px}
+.middleContainer .contentpartcontainer .contentpart label{margin-left:27px;cursor:pointer;font-size:11px;color:#444;padding-top:8px;padding-right:4px;padding-bottom:4px;padding-left:4px;}
+#ackWrapper .middleContainer .contentpart{float:left;text-align:center;width:13%;height:auto}
+#ackWrapper .fixHeader .contentpart{width:13%;text-align:center;float:left;border-bottom:0px solid #bbb;min-height:25px}
+#ackWrapper .fixHeader .contentpart label{font-size:11px;color:#454545;font-weight:700;padding:4px}
+#unAckWrapper .middleContainer .contentpart{float:left;text-align:center;width:12.8%;height:auto}
+#unAckWrapper .fixHeader .contentpart{width:12.5%;text-align:center;float:left;border-bottom:0px solid #bbb;min-height:25px}
+#unAckWrapper .fixHeader .contentpart label{margin-left:27px;font-size:11px;color:#454545;font-weight:700;padding:4px}
+.contentpart.sno{text-align:left;width:3% !important;text-align:left!important;margin-left:5px!important}    
+.contentpart.sno label,.contentpart.a-sno label{margin-left:4px!important;width:27px;}
+.toolbar .refreshBtn{float:right;font-size:10.667px;padding:4px 9px}
+    
+
+/* {{...Show Message Plugin...}} */
+pre{border:medium solid #3bb23b;display:block;margin-top:1em;padding:1em}
+.clearFix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.clearFix{display:inline-block}
+html[xmlns] .clearFix{display:block}
+* html .clearFix{height:1%}
+#google{width:728px;height:90px;margin:0 auto}
+#wrapper{width:900px;padding-bottom:100px;margin:.5em auto 0}
+.header{width:720px;height:120px;background-color:#3bb23b;color:#fff;border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px;font-size:xx-large;font-weight:900;padding-top:36px;text-align:center;cursor:pointer;margin:0 auto}
+form em{color:red;font-weight:700}
+form em.message{display:block;text-size:x-small;color:#ccc}
+form dl,div#options dl,div#examples dl{position:relative;width:100%}
+form dt{clear:both;float:left;width:32%;text-align:right;padding:0 .5em .25em 0}
+form dd{float:left;width:62%;padding-left:.75em;margin:0 0 .5em}
+#download p{border:medium #06f solid;width:95%;font-size:x-large;text-align:center;padding:.5em}
+#options dt{border:medium solid #06f;background:#fea620;color:#06f;border-radius:8px 8px 0 0;-moz-border-radius:8px 8px 0 0;-webkit-border-top-left-radius:8px;-webkit-border-top-right-radius:8px;padding:.75em}
+#options .right{color:#333}
+#options dd{clear:right;background:#ccc;margin:0 0 .5em;padding:.75em .75em .75em 1.5em}
+.right{float:right}
+.roundedcorner{background-color:#fea620;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px}
+#examples dt{font-style:italic;font-weight:15}
+#examples dd{width:50%;margin:0}
+
+/* {{...Custom Message Board style...}} */
+#showMessage{-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);box-shadow:0 2px 4px rgba(0,0,0,0.2);font-size:10px;text-align:center}
+#showMessage ul li{font-size:12.8px!important;font-weight:700!important;font-family:arial,sans-serif;color:#222;vertical-align:baseline}
+.success{background-color:#F9EDBE;color:#222;border:1px solid #F0C36D;margin-top:2px!important;padding:0}
+.fail{background-color:#ffd2d3;color:#249;border:1px solid #F0C36D;text-align:center;margin-top:2px!important;padding:0}
+/*-------------------------------------*/
+
+/*---- ---------------------Show text box as label ---------------------------*/
+.txtLabel{border:1px solid transparent!important;readonly:true!important;background-color:#fff;float:left;margin-top:0;margin-right:5px}
+table.themeTable tr td input{display:inline-block;color:#454545;font-size:11px;margin-left:10px;min-width:3px;vertical-align:bottom;font-family:Tahoma,Geneva,sans-serif,Arial,Helvetica,sans-serif!important;padding:3px}
+/*disable input field*/
+.txtLabel{color:#454545 !important;filter: alpha(opacity=100) !important; }
+		
+/*------------ edit,create,manage profile popup design 10 /7/2012........................*/
+/*------------ common css for Profile popups start--------------------------------------*/
+.ProfilePopup{width:auto;font-size:12px;z-index:9999;background-color:#fff;padding:1px}
+.ProfilePopup .editContent tr th{width:100%;border-bottom:1px solid #dddddf;background:url(images/inner.gif) repeat-x center bottom;height:16px;font-weight:700;padding:3px 6px 8px!important}
+.ProfilePopup .editContentBody tbody tr .errorMsg{position:relative;display:block;color:red;top:0!important;left:0!important}
+.ProfilePopup .editContentBody{border-bottom:1px solid #dedede;width:100%;border-collapse:separate;padding-left:3px}
+.profileInner{position:relative;height:auto;width:100%}
+.ProfilePopup .editContent{width:100%}
+.ProfilePopup .editContentBody tbody tr td input{border:1px solid #E2E2E2;color:#454545;display:inline-block;font-family:Tahoma,Geneva,sans-serif,Arial,Helvetica,sans-serif!important;font-size:12px;min-width:3px;vertical-align:bottom;white-space:nowrap;width:91%;margin:0;padding:3px 0 3px 3px}
+.ProfilePopup .editContentBody tbody tr td label.error{color:red;float:right;margin-left:0!important;margin-right:4px;min-width:1px;width:0;padding:7px 0 0!important}
+/*--------------------------common css end for profile Popup--------------------------*/
+
+/*-------------input box same effect in template on hover and focus start---------------*/
+.ProfilePopup .editContentBody tbody tr td input[type=text]:hover{border-top:1px solid #71aded;border-left:1px solid #a6ccf4;border-right:1px solid #a6ccf4;border-bottom:1px solid #a6ccf4}
+.ProfilePopup .editContentBody tbody tr td input[type=text]:focus{border-top:1px solid #71aded;border-left:1px solid #a6ccf4;border-right:1px solid #a6ccf4;border-bottom:1px solid #a6ccf4;outline:none}
+/*---------------input box same effect on hover and focus end------------------------------*/
+
+/*---------------css for edit manage and create profile popups--*/
+/*--------------manage Popup start----------------*/
+.outerPopup{display:none;font-size:12px;left:50%;margin-left:-252px;margin-top:-75px;min-width:568px;max-width:600px;position:absolute;top:50%;z-index:9999;padding:1px}
+.manage{background-color:#FFF;font-size:12px;left:1%;right:1%;top:6%;width:auto;z-index:9999;border:6px solid #CCC}
+/*---------links of edit and delete in manage popup start--------*/
+.lblLink{color:#5FA0E8;text-decoration:none;font-size:12px;margin-right:4px;float:right;cursor:pointer}
+.lblLink:hover{text-decoration:underline}
+.manage .updateProfile{left:241px}
+.manage .editContentBody{    max-height: 200px;overflow-x: hidden;overflow-y: auto; padding-bottom: 0;padding-left: 0;}
+.manage .editContentBody tbody tr .tableCelllabel{text-align:left!important}
+.manage .editContentBody tbody tr .tableHead{font-weight:700}
+/*------------manage Popup end----------------------------*/
+
+/*-----------create popup start---------------------------*/
+.createOuter{display:none;left:50%;margin-left:-142px;margin-top:-112px;min-width:278px;position:absolute;top:50%;z-index:9999}
+.create{background-color:#FFF;border:6px solid #CCC;font-size:12px;left:6px;right:6px;top:6px;width:auto;z-index:9999;padding:0}
+.create .editContentBody tbody tr .tableCelllabel{text-align:left!important}
+/*--------------create popup end-------------------------*/
+
+/*-----------edit popup start----------------------------*/
+.editOuter{display:none;left:50%;margin-left:-142px;margin-top:-112px;min-width:303px;position:absolute;top:50%;z-index:9999}
+.editBtn{background-color:#FFF;border:6px solid #CCC;font-size:12px;left:6px;right:6px;top:6px;width:auto;z-index:9999;padding:0}
+.editBtn .editContentBody tbody tr .tableCelllabel{border-collapse:separate;padding-left:15px!important;padding-right:15px!important;width:50%;text-align:left!important}
+.ovrImg{background:none;border:none;width:16px;height:16px;cursor:pointer;margin-left:5px}
+.tblContainer{max-height:200px;overflow-y:auto;overflow-x:hidden}
+/*-----------edit popup end----------------------------*/
+
+/*-------------update and delet buttons start----------*/
+.updateProfile{float:left;left:23%;cursor:pointer;margin:8px 5px}
+.updateProfile label{margin-left:0!important;cursor:pointer}
+/*-----------  update and delete buttons end----------------*/
+
+/*------------- css for edit manage and create profile popups end-----*/
+
+/*----------- edit on hover in profile popup start--------*/
+.editProfile{color:#5FA0E8;text-decoration:none;font-size:12px;margin-right:7px;float:right;cursor:pointer;display:none;width:auto!important}
+.editProfile:hover{text-decoration:underline}
+/*------------edit on hover in profile popup end--------------------*/
+
+
+/*-----------loading background behind the profile popup-------------*/
+#loadingbg{background:none repeat scroll 0 0 #222;border:1px solid gray;display:none;height:100%;top:0;opacity:0.8;filter:Alpha(opacity='60');position:absolute;width:100%;z-index:9991}
+/*-----------loading background behind the profile popup-------------*/
+
+/*------------error message in forms ---------------------------*/
+.error{color:red}
+/*------------error message in forms end------------------------------*/
+
+#toolLogo{color:#5e9de2;font-size:16px;font-weight:700;left:10px;position:absolute;top:4px}
+
+/*Bidhu*/
+div.editbox{ width:100px; border:0px solid #000000;float:left;display:none;overflow:hidden;padding-left:10px;position:absolute;right:-9%;top:1px;}
+div.editbox a{display:block;height:17px;float:left;padding:2% 0 0% 4%;color:#999;text-decoration:none;}
+div.editbox a:hover{color:#5E9CE1;}
+div.editbox a.inlineEdit{display:block;}
+div.editbox a.inlineUpdate{display:none;}
+div.editbox a.inlineCancel{display:none;}
+td.txtLabel_edatable div.cntiner{position:relative;overflow:hidden;width:100%;}
+input.txtLabel{outline: 0px solid #0033dd;}
+input.addpadding{margin-right:5px;margin-top:0px;width:40%;float:left;}
+#blocker{position:absolute;left:0;top:0;width:100%;height:100%;position:fixed;z-index:3000;background:url(../images/blocker.png);display:none;}
+/*end*/
+/*Camera Table Code for configuration page and dashboard Page*/
+.fixed-table-container-inner table.fixTable tbody tr td {border-bottom:1px solid #DEDEDE;padding: 5px;text-align: left; font-size:11px;}	
+.fixed-table-container-inner table.fixTable tbody tr {background: #FEFEF2;}
+.fixed-table-container-inner table.fixTable tbody tr:hover {background-color:#FFFFDD;}
+.fixed-table-container table th {padding: 0 5px;text-align: left;}
+.fixed-table-container {background-color: white; height: 92%; position: relative;width: 100%;}
+.fixed-table-container-inner {height:100%; overflow-x:hidden; overflow-y: auto;}
+ #cameraPanel .fixed-table-container-inner{height:97%; overflow-x:hidden; overflow-y: auto;}
+.header-background {background: url("images/inner.gif") repeat-x scroll center bottom #EEEEEE;border: 1px solid #DEDEDE;color: #454545;font-size: 11px;font-weight: bold;height: 16px;	padding: 8px 8px 6px !important;text-align: left;}
+.fixed-table-container table{overflow-x: hidden;overflow-y: auto;width: 100%;}
+.th-inner {line-height: 30px;margin-left: -5px;padding-left: 5px;position: absolute;text-align: left;top:0;}
+ .fixTable tr td:first-child{padding:5px 5px 5px 12px !important;}
+ 
+/*Camera Table Code for configuration page and dashboard Page*/
+	
+
+
+    
+	
+	
+	
+

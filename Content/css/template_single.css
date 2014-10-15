@@ -1,0 +1,430 @@
+/* ------------------------
+* Coded By : Samta Jain.
+*-------------------------*/
+
+@charset utf-8;
+
+/*==================================
+            Reset CSS 
+==================================*/
+
+body{background:none;border:none;color:#444;font-family:Tahoma,Geneva,sans-serif,Arial,Helvetica,sans-serif;font-size:11px;margin:0;overflow:hidden;padding:0}
+img{border:0;vertical-align:top}
+ul{list-style-type:none}
+h1,h2,h3,h4,h5,h6{clear:both;font-family:Modata , Tahoma, Arial, sans-serif;font-weight:400}
+h1{font-size:28px;margin-bottom:15px}
+h2{font-size:18px;margin-bottom:10px}
+h3{font-family:Tahoma, Arial, sans-serif}
+p{font-size:13px;line-height:20px;margin-bottom:15px}
+hr{border:0;clear:both;height:1px;margin-bottom:20px;margin-top:10px;width:100%}
+fieldset{margin-bottom:15px;padding:20px}
+fieldset legend{font-size:13px;padding:5px 10px 0}
+fieldset p{margin-bottom:20px}
+input,textarea,select{margin-right:-4px;margin-top:-2px;padding:0}
+select option{padding-right:15px}
+textarea{display:block;height:100%;width:100%;overflow:hidden}
+label{display:inline-block;font-size:12px;margin-left:10px;min-width:3px;padding:3px;vertical-align:bottom}
+
+/*---- End Reset CSS ---*/
+
+a.button{position:relative;text-decoration:none;width:auto;display:inline-block;margin-right:10px;padding:3px 10px 3px 0}
+a.button span{float:left;position:relative;margin:2px 3px 0}
+input.sf{width:120px}
+input.mf{width:240px}
+input.lf{width:360px}
+.field_desc{font-style:italic;font-size:11px;color:#555}
+.validate_error{font-size:11px;color:red;font-style:italic}
+.validate_success{font-size:11px;color:#739f1d;font-style:italic}
+.inpcol{display:inline-block;margin-bottom:15px;padding:0 30px 0 15px}
+.inpcol p{margin-bottom:5px}
+INPUT[type=radio]{margin:1px 6px 0 10px;padding:0}
+
+/*==================================
+        Start [ Header ]
+==================================*/
+#header{width:100%;height:130px}
+#header #top{display:block;width:100%;height:83px}
+#top .logo{float:left;display:inline;width:361px}
+#top .meta{display:inline;float:right;position:relative;padding-right:10px;margin-top:10px}
+.meta p{text-align:right;margin-bottom:10px;margin-top:10px;color:#aaa}
+.meta ul li .ui-icon{float:left}
+.meta ul li a{float:left;font-size:10px;text-decoration:none;margin:0 0 0 10px}
+.meta ul li a span{margin-top:-2px}
+p.mid{text-align:center;margin-top:20px}
+p.mid a{padding:0 10px}
+#header #search{float:right;display:block;position:relative;width:249px;right:5px;height:26px;margin-top:13px}
+#search input{background:none;border:0;width:180px;position:relative;font-size:12px;font-style:italic;padding:5px 10px 0 0}
+#search input.but{position:relative;float:left;width:24px!important;height:24px;margin-top:1px;padding:0!important}
+#header #navbar{float:left;display:block}
+#navbar ul.nav{display:inline-block;height:30px;margin-top:11px;position:relative;float:left}
+ul.nav li{float:left;position:relative;height:30px;display:block}
+ul.nav li a{color:#ccc;text-decoration:none;font-size:12px;display:block;padding:10px 20px 12px}
+ul.nav ul{position:absolute;top:-999em;width:10em}
+ul.nav ul li{border:0;width:130px;z-index:9999!important;height:auto;padding:5px}
+ul.nav li:hover ul,ul.nav li.sfHover ul{left:0;top:3.6em;z-index:9999!important}
+ul.nav li li{position:relative;z-index:9999!important}
+ul.nav li li a{display:block;width:110px;font-size:12px;padding:5px 10px}
+.meta ul,.meta ul li{float:right}
+ul.nav li:hover li ul,ul.nav li.sfHover li ul,ul.nav li li:hover li ul,ul.nav li li.sfHover li ul{top:-999em}
+ul.nav li li:hover ul,ul.nav li li.sfHover ul,ul.nav li li li:hover ul,ul.nav li li li.sfHover ul{left:14em;top:0}
+
+/*======== END [ Header ] ===========*/
+
+/*==================================
+        Start [ Master Menu ]
+==================================*/
+#masterHeader{height:60px;position:relative}
+#masterHeader #logo{background:url(logo.png) left center no-repeat transparent;width:54px;height:54px;position:absolute;left:4px;top:1px}
+#masterHeader #slogan{background:url(pghead.png) right center no-repeat transparent;width:421px;height:51px;position:absolute;left:60px;top:3px}
+#masterHeader #userHeaderPanel{position:absolute;right:10px;top:4px}
+#masterHeader #userHeaderPanel .option{color:#555;font-size:12px;text-shadow:0 1px 1px #fff;display:inline-block;float:left;margin:2px 0;padding:0 6px}
+#masterHeader #userHeaderPanel .optionRight{border-right:1px solid #5896DA}
+#masterHeader #userHeaderPanel .optionLeft{border-left:1px solid #5896DA}
+#masterHeader #userHeaderPanel .option a,#masterHeader #userHeaderPanel .option a:visited{color:#5896DA;font-size:90%;font-weight:700;text-decoration:none;text-shadow:0 1px 1px #eee}
+#masterMenu{background:url(images/menubar.png) repeat scroll 0 0 transparent;height:38px;left:0;position:absolute;right:0;top:30px;z-index:999}
+#masterMenu ul{margin:0 0 0 20px;padding:0}
+#masterMenu .menuItem{background:url(images/menubar-item.png) no-repeat scroll left top transparent;color:#1d5ba0;cursor:pointer;float:left;font-weight:700;list-style:none;font-size:12px;text-shadow:0 1px 1px #9DdBf0;padding:7px 10px 7px 15px}
+#masterMenu li a,#masterMenu li a:link,#masterMenu li a:visited{color:#1d5ba0;text-decoration:none}
+.menuItemBox{display:none}
+.innerMenu ul{background:none repeat scroll 0 0 #F5F5F8;border-right:1px solid #DFDFDF;left:0;overflow:hidden;position:absolute;top:0;z-index:9999991;-moz-box-shadow:0 3px 10px #CCC;-webkit-box-shadow:0 3px 10px #CCC;-moz-border-radius:0 0 4px 4px;-webkit-border-radius:0 0 4px 4px;border-color:0 #DFDFDF #DFDFDF;border-style:none solid solid;border-width:0 1px 1px;margin:0;padding:0}
+.innerMenu ul li{list-style:none;position:relative;height:22px;padding:0}
+.innerMenu ul li a{color:inherit;text-decoration:none}
+.innerMenu ul li:hover,.innerMenu ul li.selected{background:0 to(#8DCEFE));filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#8DCEFE',EndColorStr='#5c98da');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#8DCEFE', EndColorStr='#5c98da')";border:1px solid 5px;-moz-border-radius:1px;-webkit-border-radius:1px}
+.innerMenu ul li .icon{border-right:1px solid #ddd;float:left;height:16px;text-align:center;width:16px;padding:2px 7px 4px 4px}
+.innerMenu ul li .item{border-left:1px solid #fff;color:#5C98DA;float:left;font-size:12px;height:14px;padding:4px 60px 4px 2px}
+.innerMenu ul li:hover .icon,.innerMenu ul li.selected .icon{border-right:1px solid #5c98da}
+.innerMenu ul li:hover .item,.innerMenu ul li.selected .item{border-left:1px solid #8dcefe;color:#000;text-shadow:0 1px 1px #eee}
+.innerMenu ul li:hover .shortcut,.innerMenu ul li.selected .shortcut{color:#000;text-shadow:0 1px 1px #eee}
+.innerMenu ul li .shortcut{color:#bbb;font-size:12px;height:18px;position:absolute;right:4px;text-shadow:0 1px 1px #ddd;top:4px;width:36px}
+.innerMenu ul li.spacer{height:0;padding:0}
+.innerMenu ul li.spacer .item{border-top:1px solid #ddd;border-bottom:1px solid #fff;height:0;left:29px;position:absolute;width:100%;margin:0;padding:0}
+.innerMenu ul li.spacer .icon{height:0;margin:0;padding:0}
+.menuLink{float:right}
+.menuLink li{cursor:pointer;padding:4px 11px}
+#masterHeader #userHeaderPanel .option a:hover,.selected span.focus{text-decoration:underline}
+.lastMenuSelected,.pageSelected,.selected{background:url(images/menubar-item-hover.png) repeat scroll 0 0 transparent!important}
+
+/*======== END [ Master Menu ] ===========*/
+
+/*==================================
+     Start [ Dashboard start ]
+==================================*/
+.dashboard{border-bottom-width:1px;bottom:31px;left:0;overflow:hidden;position:absolute;right:0;top:60px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABMCAIAAAAjsUpsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEVJREFUeNqMTlsKACAMku5/Z9sL1lpUH6JMJ4LkAGBQTdVxIwUQXVizNK+zd1Tecjfv1RHbnE/bcmPrKL8/XYufG6cAAwBFymotT/a6tQAAAABJRU5ErkJggg==) repeat-x scroll 0 0 #D8DCE0}
+.upperPanel{position:absolute;left:0;right:0;top:0;height:50%}
+.bottomPanel{position:absolute;left:0;right:0;bottom:0;height:50%}
+.smallWidth{width:33.3%;height:100%;position:absolute}
+.largeWidth{width:66.6%;height:100%;position:absolute}
+#sitePopup .lblSite,.popupTable label{width:73%}
+.left{left:1px}
+.middle{left:33.3%}
+.right{left:66.6%}
+.panelSize{width:66.6%}
+.leftPanel{width:50%;position:absolute;left:1px;height:100%}
+.rightPanel{width:50%;position:absolute;right:0;height:100%}
+
+/*==================================
+     Start [ Window of Panels ]
+==================================*/
+.window{overflow:visible;position:absolute;background:#FFF;border-radius:5px 5px 5px 5px;-moz-border-radius:5px;-webkit-border-radius:5px 5px 5px 5px;box-shadow:3px 3px 6px #AAA;background-color:#444;-moz-box-shadow:3px 3px 6px #AAA;-webkit-box-shadow:3px 3px 6px #AAA;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=5,MakeShadow=true,ShadowOpacity=0.30);-ms-filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);zoom:1;bottom:0;left:0;min-height:120px;min-width:120px;right:0;top:5px;margin:3px 5px}
+.innerWindow{bottom:0;left:0;position:absolute;right:0;top:54px}
+
+
+/*----------Titlebar Start-----------------*/
+.titlebar{border-left-width:1px;height:25px;left:0;position:absolute;right:0;top:0;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;-webkit-border-radius:5px 5px 0 0;background-color:#5590D2;background-image:0;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#61A7F2',endColorstr='#5590D2');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#61A7F2', endColorstr='#5590D2')";border-left-color:#86B7ED;border-left-style:solid}
+.titlebar .title{bottom:0;cursor:default;left:0;line-height:1;overflow:hidden;position:absolute;right:0;top:0;white-space:nowrap;font-size:small;color:#FFF;margin:6px 64px 0 7px}
+.titlebar .buttons{position:absolute;right:0;margin:5px}
+.titlebar .buttons .titlebarButton{cursor:pointer;float:left;height:15px;overflow:hidden;width:15px;margin:0 0 0 5px}
+.titlebar .buttons .close{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAMUlEQVR42mNgGAUM/yFgJprYTJAgMZpnIhuAzifJAJI04nIBWRrJdjLJLqAotEcAAADY0XuFLdX2NQAAAABJRU5ErkJggg==) no-repeat scroll 0 0 transparent}
+.titlebar .buttons .maximize{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAHElEQVR42mNgGAUM//EA2msmRXy4aCY7wEYAAAANZXONzd+/WAAAAABJRU5ErkJggg==) no-repeat scroll 0 0 transparent}
+.titlebar .buttons .minimize{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAF0lEQVR42mNgGAUM//EA2moeBaMAHQAA9d83yRzP5kIAAAAASUVORK5CYII=) no-repeat scroll 0 0 transparent}
+.titlebar .buttons .restore,.titlebar .buttons .restoreAll{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAIElEQVR42mNgGD7gPx5AkaFk20hbzfjEh6hm+sfv4AMAajGnWSVraboAAAAASUVORK5CYII=) no-repeat scroll 0 0 transparent;display:none}
+/*---------------------Titlebar End-----------------------------*/
+
+/*---------------------menubar start---------------------------*/
+.menubar{border-left-width:1px;height:auto;left:0;min-height:21px;position:relative;right:0;top:25px;background-color:#C9E2FC;background-image:none;border-left-color:#E4F1FE;border-left-style:solid;padding:4px}
+.refreshIcon{background:url(images/icons/refresh_white.png) no-repeat scroll 0 0 transparent;float:right;height:20px;width:21px;cursor:pointer;opacity:0.9;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=75);margin:3px 2px}
+.refreshIcon:hover{opacity:1.6;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=155)}
+/*-----------------------menubar End----------------------------*/
+
+/*----------------------toolbar Start-------------------------*/
+.toolbar{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAAcElEQVR42u3YYQYAIBiD4d3/KN0pSSRJJImkdZB947nA+3NwzlEZKD4LYAEsgHiA9x6V4d5LZTjnUBn23lSGtRaVYc5JZRhjUBl671SG1hqVodZKZSilUBlyzlSGlBKVIcZIZQghUBm891RmAdRv8Q8+U3zLFCicDAAAAABJRU5ErkJggg==) repeat-x scroll 0 0 transparent;height:24px;z-index:1}
+.toolbarButton{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAWCAYAAADq8U2pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUeNpiWLVqFdf///+5WBgYGMSBmIEmDHYY4yWM8YIIEWIUPwIxAAIMABaGD2C3Iu2JAAAAAElFTkSuQmCC) no-repeat scroll center right transparent;cursor:pointer;display:inline;float:right;font-size:8pt;height:24px;margin-right:0;position:relative;padding:0 3px}
+.toolbarButton.button{padding:0}
+#lblSiteName.rightpopup{margin:0;padding:0}
+.arrowIcon1{background:url(images/icons/IconComboBox.png) no-repeat scroll 0 0 transparent;background-position:center;float:right!important;height:15px;width:15px;z-index:9;margin:2px 0 7px 1px}
+.btnAlignment{float:left!important}
+.toolbarButtonDisabled .toolbarText,.toolbarButton .toolbarText{margin-left:4px;margin-top:5px;float:left;margin-right:6px}
+.toolbarText a{color:inherit;outline:none;text-decoration:none}
+.toolbarText:hover{color:#111}
+.toolbarButtonDisabled{opacity:0.5}
+.toolbarMore{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAWCAYAAAAinad/AAAALUlEQVR42mNgGAWjYBTQCqSlpf0HYWL5RBkGBKuJ4RMEIIXIignxR8EooCcAAG0wOzXQicwkAAAAAElFTkSuQmCC) no-repeat scroll 0 0 transparent;cursor:pointer;display:none;height:22px;position:absolute;right:0;top:0;width:20px}
+.toolbarDropdown{background:none repeat scroll 0 0 #FFF;display:none;position:absolute;right:0;top:77px;z-index:9999991;-moz-box-shadow:0 3px 10px #CCC;border-color:0 #DFDFDF #DFDFDF;border-style:none solid solid;border-width:0 1px 1px;margin:0;padding:0}
+.toolbarDropdown li{border-bottom:1px solid #eee;color:#333;font-size:11px;text-transform:capitalize;padding:2px 15px 2px 20px}
+.toolbarDropdown li:hover{background:#aaa}
+.toolbarDropdown li:hover a{color:#fff}
+.toolbarDropdown a{color:#333;outline:none;text-decoration:none}
+.toolbarText span{padding-right:2px}
+.toolbarTSext span img{vertical-align:top}
+.toolbarButton:active,.toolbarButtonSelected{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAYCAYAAAA20uedAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAABASURBVCiRzdHBDQAwCAJAUPcfRGdylnYC+mlsyvcekMDMXBBhd0s0BQAQZtov0N2fd343aKiTpMTj2UMYVSVxA63KCUtNR9s1AAAAAElFTkSuQmCC) repeat-x scroll center right transparent}
+/*-----------------------toolbar End----------------------------*/
+/*----------------------content Start----------------------------*/
+/*-----------------without statusbar----------------------*/
+.content{background:none repeat scroll 0 0 #FFF;-moz-border-radius:0 0 5px 3px;border-radius:0 0 5px 3px;bottom:0;left:0;overflow-x:hidden;overflow-y:auto;position:absolute;right:0;top:24px;z-index:1;padding:2px}
+#divSiteMap.content{overflow-x:visible;overflow-y:visible}
+/*with statusbar*/
+.contentStatusbar{background:none repeat scroll 0 0 #FFF;bottom:36px;left:0;overflow-x:hidden;overflow-y:scroll;position:absolute;right:0;top:23px;z-index:0;padding:2px}
+.withoutToolbar{border-top:1px solid #AAA;top:0}
+/*----------------------content End-------------------------------*/
+/*----------------------statusbar start-------------------------*/
+.statusbar{background:#C9E2FC;bottom:0;height:25px;left:0;position:absolute;right:0;z-index:0;padding:6px}
+/*---------statusbar End-------------*/
+
+/*---------------------------------------Window End-----------------------------------------------------*/
+.clear{clear:both}
+.openPopup{cursor:pointer;float:right;height:23px;position:relative;z-index:9;border:1px solid transparent;width:auto;margin:0}
+.arrowIcon{background:url(images/icons/IconComboBox.png) no-repeat scroll 0 0 transparent;background-position:center;float:right!important;height:15px;width:15px;z-index:9;margin:2px 12px 7px 1px}
+.openPopup label{float:left;font-size:13px;height:10px;margin:2px 3px 4px 6px;padding:0}
+.popup{height:100px;position:absolute;right:-1px;top:21px;width:150px;border:1px solid #CCC;background:#FFF;z-index:5;border-top:none}
+.showPopup{height:134px;position:absolute;right:-1px;overflow:hidden;width:133px;background:#FFF;z-index:99;top:23px;box-shadow:0 2px 4px rgba(0,0,0,0.4);border:1px solid #aaa;border-top:none}
+.popupTable{width:100%;height:99%;border-collapse:collapse;overflow-y:auto}
+.popupTable tbody{top:0;bottom:30px;left:0;right:0;padding:1px 5px}
+.popupTable tbody tr{width:100%}
+.popupTable tbody tr td input[type=checkbox]{margin:2px 5px}
+.popupTable tbody tr td label{cursor:pointer;font-size:12px;height:20px;margin:0}
+.popupTable tbody tr td input[type=radio]{float:left}
+.popupTable tbody tr td:hover{background-color:#f5f5f5}
+.moreOption{height:35px;right:-1px}
+.moreOption table tr td{text-align:center}
+.moreOption .popupTable tr #ackAll span img.tickimg{float:left;padding:6px 0 0 7px}
+.moreOption .popupTable tr #ackAll label{margin:4px 0 0 3px}
+.applyoptions{float:right;width:44px}
+.applyoptions input[type=checkbox]{vertical-align:super;margin:5px 0 5px 5px}
+.applyoptions .showPopup{height:62px;width:100px;left:-1px}
+.popupTable tbody tr td,#checkBoxAction .popupTable tbody tr td{border-top:1px solid #e5e5e5;padding:5px 3px}
+
+/*different checkbox style for different options [ checkDefault, checkPartial, checkAll]*/
+.applyoptions .checkDefault{border:1px solid #999;float:left;height:5px;margin:4px 0 4px 8px;padding:3px 6px}
+.applyoptions .checkDefault:hover{border:1px solid #444}
+.applyoptions .checkPartial{background-image:url(images/icons/checkmark-partial.png);background-repeat:no-repeat;background-position:center}
+.applyoptions .checkAll{background-image:url(images/icons/checkmark.png);background-repeat:no-repeat;background-position:center}
+
+/*...........................Popuptable in groupalarm..................*/
+.popupHead{border-bottom:1px solid #D2D2D2;width:100%;overflow:auto}
+.popupfootDiv{background:none repeat scroll 0 0 #f7f7f7;border-bottom:1px solid #EEE;border-top:1px solid #EEE;height:26px;width:100%}
+.popupfootDiv div{cursor:pointer;display:inline-block;font-size:12px;height:85%;vertical-align:bottom;width:89%;padding:5px 7px}
+.popupfootDiv:hover{-moz-border-bottom-colors:none;-moz-border-image:none;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:none;background:none repeat scroll 0 0 #E6F1FD;border-color:#C9E2FC 0;border-style:solid none;border-width:1px medium}
+/*....................end.........................*/
+
+.popupTable tfoot{background:none repeat scroll 0 0 #C9E2FC;bottom:0;height:24px;left:0;right:0;padding:3px}
+.popupTable tfoot tr input{margin:2px;padding:3px 5px!important}
+.popupTable tfoot tr td{border-top:1px solid #E2E2E2;background:#C9E2FC}
+.popupData{height:116px;width:100%;overflow-y:auto;overflow-x:hidden;z-index:55}
+.popupData table tr:hover{background:#FFC}
+.popupData input{float:left}
+.popupFoot{height:20px;width:100%;border-top:1px solid #e2e2e2;margin:0;padding:0}
+.popupFoot:hover{background:#c9e2fc}
+.popupFoot label{font-size:13px;font-weight:700;color:#444;cursor:pointer;margin:1px 2px 3px 5px}
+.chkBoxLabel{height:16px;padding:5px 1px 0 9px !important}
+/*--------------------------------------Dashboard End-------------------------------------------------*/
+
+/*--------------------Loading style for all panels Start-----------------------------------*/
+.innerLeftLoading{background:url(../images/loading.gif) no-repeat;background-position:center;border:1px solid #aaa;bottom:0;left:0;overflow:auto;position:absolute;top:0;width:50%;display:none;opacity:0.8;filter:alpha(opacity=70)}
+.innerRightLoading{background:url(../images/loading.gif) no-repeat;background-position:center;border:1px solid #aaa;bottom:0;overflow:auto;position:absolute;right:0;top:0;width:49%;opacity:0.8;filter:alpha(opacity=70);display:none}
+.leftLowerLoading{background:url(../images/loading.gif) no-repeat;background-position:center;border:1px solid #aaa;bottom:0;left:0;overflow-y:auto;position:absolute;right:0;text-align:center;top:24px;opacity:0.8;filter:alpha(opacity=70);display:none;margin:auto;padding:10px 5px 5px}
+.rightUpperLoading,.rightLowerLoading{background:url(../images/loading.gif) no-repeat;background-position:center;border:1px solid #aaa;bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:24px;z-index:1;opacity:0.8;filter:alpha(opacity=70);display:none;padding:2px}
+
+/*-------------table design(value and properties)--------*/
+.themeTable{border:1px solid #EEE;border-collapse:collapse;font-size:12px;margin-bottom:8px;margin-left:0!important;width:99.9%;color:#444}
+.themeTable td{border-top:1px dotted #f9f9f9}
+
+/*TABLE TITLE HEADER*/
+.tableCelltitle{background:url(images/inner.gif) repeat-x scroll center bottom #eee;height:16px;text-align:left;font-size:14px;color:#444;padding:3px 8px 6px!important}
+
+/*TABLE ROW HEADING*/
+.tableCelllabel{background:#F7F7F7;border:1px solid #eee;border-top:none;font-size:11.5px;height:20px;padding-left:10px;padding-right:10px;text-align:right;white-space:nowrap;width:25%}
+
+/*TABLE ROW VALUE*/
+.tableCellinfo{background:#FFF;border-bottom:1px solid #eee;border-left:1px solid #eee;border-right:1px solid #eee;padding-left:10px;padding-right:10px;text-align:left;font-size:11.5px;width:25%}
+.loading{background:url(../images/loading.gif) no-repeat;background-position:center;width:48px;height:48px;display:none;opacity:0.8;filter:alpha(opacity=70);position:absolute;top:45%;left:45%;margin:0 auto}
+.nodataShow{display:none;left:0;opacity:0.8;position:absolute;top:0;width:100%;margin:0 auto}
+.jqplot-xaxis-label{font-size:11px}
+.jqplot-yaxis-label{width:12px}
+.jqplot-highlighter-tooltip{background:#60a3ed;border:1px solid #eee;font-weight:700;font-size:12px;color:#FFF;position:relative!important;z-index:99999;max-width:186px}
+
+/*...............code added by samta..................*/
+.tableHead{height:30px;width:100%;overflow:hidden}
+.tableBody{height:165px;width:100%;overflow-y:auto;overflow-x:hidden}
+
+/*----table design------*/
+.tableStyle{background:#f7f7f7;width:100%;font-size:12px;margin-top:1px;border-collapse:collapse;margin-left:0!important;border:1px solid #eee;color:#444}
+.tableStyle thead tr{background-image:url(images/inner.gif);background-repeat:repeat-x;background-position:bottom;text-align:left;color:#444;padding:3px 5px 6px}
+.tableStyle thead th{text-align:left;padding:5px 5px 6px}
+.tableStyle tr td{border-top:1px solid #dedede;padding:3px 5px}
+.tableStyle tbody tr:hover{background:#ffd}
+.liveData{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAgtJREFUeNqcUz1vE0EQfXu357XucjanEOTEInRIFqKwqFzkHyQdLgINEg2WQO4QoqQARGdRGCEh0SCKRKJMky6Fq/S0pMESsRzsXIzvk5n1+WRMwcdIzzu3O2923sxaNJvNHQDr+D/7KpMk2eh2u2/CMPwnpmVZaLVaDziBCIIA2y8OkChXHwohIAwDBq2maWoYBJn5KzJC9+5NMFfGcWwQEFkObtRqf3X799EIzGEuJxA6QRThwj9HHEx1kCElEtpb9s2CgqA1SyAkEQ0m88b4bIi3d67rwHvvjvH+/i3tN18fYe/R1mz/w2e4JU9fyNy8AtYdRiEGg4EOHJ/7ua9sJ/ftchlF+v6tAm5OIkw8/HRCDZNwr6zj8eEZpCVxaeMqnh1T+SSlvObBIhFRFMwq4B/OZtJYTFWE65aIZEEWCjOwz2dEZvBkQFOL40meQEtYW7EQpqlukB4frZJBezRrmCyTfDYn/YGs8TMJKR282tnUMiTflM1bvwcCn8dxMNetwcZcUa/Xdylgc3nW7Xb75eJ3p9N5shxDyU+owvRjmpXGRq+LMz91XfeX4Ol0Si2Qzw16oYsm+/0+GHNTSsHzPFWtVmHbtpY0mUwwHA4VgRPlsZVKRfcMWb9WCZcJRcdxbjcajWuLN/V6vS++7++TGxC+EU65DfMEXJedQf7hr8Ad9AkXrPinAAMARd8Js/MlOmUAAAAASUVORK5CYII=);background-repeat:no-repeat;cursor:pointer;margin:0 0 0 15px;padding:1px 9px}
+
+/*--------------------------------------------------------*/
+
+/*---- deepak -----*/
+
+#cameraInfo{font-size:10px}
+
+/*label design*/
+.field{background-image:0;background:0 to(#F9F9F9));filter:progid:DXImageTransform.Microsoft.Gradient(endColorstr='#EEEEEE',startColorstr='#F9F9F9',gradientType='0');border:1px solid #D2D2D2;display:inline-block;height:21px;position:relative;top:0;width:60px}
+.fieldLabelIcon{opacity:0.6;margin:1px;padding:1px 10px 2px}
+.fieldLabelIcon span.fGroup{background:url(images/icons/label.png) no-repeat;display:inline-block;padding:0 10px 1px}
+.fieldLabelIcon span.fLabel{background:url(images/icons/f_folder.png) no-repeat;display:inline-block;padding:0 10px 1px}
+.fieldLabelIcon span.fNotification{background:url(images/icons/f_notification.png) no-repeat;display:inline-block;padding:0 10px 1px}
+.fieldLabelIcon img{margin:4px 0 3px}
+
+/*popup design for field for field head, search, content, foot*/
+.fieldDescription{background:#FFF;border:1px solid #dedede;position:absolute;height:190px;top:21px;width:150px;left:0}
+.fieldLabel{position:absolute;left:1px;right:1px;top:1px;bottom:1px;color:#555}
+.fieldLabel .fHead,.fieldLabel .fsearch,.fieldLabel .fFoot{height:20px;width:100%;padding:3px 0}
+.fieldLabel .fsearch{padding-top:1px}
+.fieldLabel .fsearch .search{width:97%!important;margin:0 0 0 4px;padding:0 0 2px}
+.fieldLabel .fList{max-height:100px;width:100%;border-bottom:1px solid #e2e2e2;border-top:1px solid #e2e2e2;overflow-y:auto;overflow-x:hidden}
+.fieldLabel .fListContent{border-bottom:1px solid transparent;border-top:1px solid transparent;padding:0}
+.fieldLabel .fListContent label{cursor:pointer;margin-left:0;vertical-align:text-bottom;width:80px}
+.fieldLabel .fListContent input[type=radio]{cursor:pointer}
+.fieldLabel .fFoot{margin-top:3px;border-bottom:1px solid transparent;border-top:1px solid transparent}
+.fieldLabel .fFoot label{font-size:13px}
+
+/*---- hover properties---*/
+.fieldLabelIcon:hover{opacity:0.8;box-shadow:0 1px 1px rgba(0,0,0,0.1)}
+.field:hover{background-image:0;background:0 to(#F5F5F5));filter:progid:DXImageTransform.Microsoft.Gradient(endColorstr='#F2F2F2',startColorstr='#F5F5F5',gradientType='0');border:1px solid #c2c2c2;cursor:pointer}
+.fieldLabel .fListContent:hover{border-bottom:1px solid #eee;border-top:1px solid #eee;background:#f5f5f5;cursor:pointer}
+.fieldLabel .fFoot:hover{background:#e6f1fd;border:1px solid #c9e2fc;border-left:none;border-right:none}
+/*.fieldActive{
+	background-image: -moz-linear-gradient(center top , #f1f1f1, #e5e5e5);
+    border: 1px solid #4787ED;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+} */ 
+/*------------------------*/
+/*----search box design----*/
+/*-------search box---------*/
+.search{float:left;height:24px;min-width:60px;position:relative;width:50%}
+.search .lftDsgn{background:url(images/icons/search_icon/Blank_textbox_001.png) no-repeat scroll 0 0 transparent;height:24px;left:0;overflow:hidden;position:absolute;width:13px}
+.search .middleDsgn{background:url(images/icons/search_icon/Blank_textbox_005.png) repeat-x scroll 0 0 transparent;border-top:1px solid #EEE;height:22px;left:13px;overflow:hidden;position:absolute;right:24px}
+.search .middleDsgn input{background:none repeat scroll 0 0 transparent;border:0 none;height:18px;width:100%;padding-top:1px;margin:2px 0 0}
+.search .rightDsgn{background:url(images/icons/search_icon/Blank_textbox_004.png) no-repeat scroll 0 0 transparent;height:24px;overflow:hidden;position:absolute;right:0;width:25px}
+.search .crossDsgn{background:url(images/icons/search_icon/Blank_textbox_003.png) no-repeat scroll 0 0 transparent;cursor:pointer;height:24px;overflow:hidden;position:absolute;right:0;width:25px}
+.search .crossDsgn:hover{background:url(images/icons/search_icon/cross-hover.png) no-repeat scroll 0 0 transparent}
+.searchImg{background:url(images/icons/search_icon/Search.png) no-repeat scroll 0 0 transparent!important;margin:4px 3px 2px -9px}
+/*--End-- of search box*/ 
+/*--End-- of field deesign*/
+/*accept button*/
+.accept{margin-top:-2px!important;padding:1px 5px 2px!important}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*---------------default common classes---------*/
+.assignLeft{ float:left !important;}
+.assignRight{ float:right !important;}
+.assignMargin{ margin:5px !important;}
+
+/**--------------Default button style--------------**/
+.yoButtons{-moz-border-radius:3px;background-color:#f8f8f8;color:#4991DD;cursor:pointer;display:inline;float:none;font-family:Verdana, "Helvetica Neue" ,Helvetica,Arial,sans-serif;font-size:11px;font-weight:400;line-height:100%;min-width:51px;position:relative;text-align:center;text-decoration:none;text-shadow:0 1px rgba(255,255,255,0.75);width:auto;background-repeat:repeat-x;border-color:#D4D4D4 #B2B2B2 #C2C2C2 #D4D4D4;border-style:solid;border-width:1px;margin:0;padding:1px 5px}
+.yoButtons:hover{background-color:#F7F7F7!important;color:#4991DD!important;border-color:#B4B4B4!important}
+.yoButtons:active{background-color:#e5e5e5!important;color:#555!important;border-color:#4991DD!important}
+
+/*-------------------------------------Notification Start----------------------------------------*/
+/*NOTIFICATION BLOG DESIGN*/
+.monitoringNotification{background-color:#FBFBF1;font-size:12px;margin-top:3px;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-left-radius:3px;border-bottom-right-radius:3px;margin-bottom:2px;border:1px solid #c3c3c3!important;padding:5px}
+.monitoringNotification:hover{border:1px solid #64c3da!important;color:#4E4E9C;cursor:pointer}
+
+/*NOTIFICATION HEADER*/
+.notificationHeading{border-bottom:1px solid #E7E7E7;font-weight:700;font-size:11px;vertical-align:top;width:100%;display:inline-block;height:auto;padding-bottom:6px}
+
+/*RIGHT ICON AND ACCEPT BUTTON CONTAINER*/
+.notificationHeading div{color:#1D5BA0;text-shadow:0 1px 1px #9DDBF0;float:right;font-size:10px;border:1px solid #C9E2FC;margin-right:4px;margin-top:-1px;font-weight:400;cursor:pointer;letter-spacing:1px;background:0;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FAFFFF',endColorstr='#CCCCCC');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FAFFFF', endColorstr='#CCCCCC')";padding:0 2px}
+.notificationHeading div img{vertical-align:middle;margin-right:2px}
+.notificationHeading div:hover{border:1px solid #8ABAF9;color:#0C2AA0}
+.notificationHeading div:active{border:1px solid #5C9FE7;color:#0A2670;background:0;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cccccc',endColorstr='#FAFFFF');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#cccccc', endColorstr='#FAFFFF')"}
+.notificationHeading .labelContainer{height:auto;float:left;width:70%;border:none!important;background:none!important}
+.notificationHeading label{display:inline-block;font-size:11px;font-weight:400;vertical-align:top;color:#333;margin:1px 4px;padding:0}
+.notificationHeading input[type=checkbox]{vertical-align:super;float:left;margin:2px 1px 0 2px}
+/*CONTAIN NOTIFICATION DESCRIPTION*/	
+.notificationContent{float:left;width:100%}
+.notificationContent label{font-size:11px;margin-left:2px}
+/*NOTIFICATON BUTTONS COTAINER*/
+.notificationFooter{float:right;border-collapse:collapse;border-spacing:0;position:absolute;right:10px;margin:3px 0}
+
+/*SELECTED NOTIFICATION*/
+.monitoringNotificationSelected{background-color:#DFe9ef;border:1px solid #a2c9f5;border-bottom:none}
+.monitoringNotificationSelected:hover{border-bottom:none}
+.monitoringNotificationSelected .notificationHeading{color:#06C;border-bottom:1px solid #FFF}
+
+/*selected notification button style*/
+.monitoringNotificationSelected .notificationIcon{border-left:1px solid #a2c9f5;border-right:1px solid #a2c9f5;border-color:#a2c9f5;border-style:solid;border-width:1px}
+
+/*ICONS IN NOTIFICATION BUTTONS IN ALARM PANEL*/
+.notificationIcon{background:0 repeat scroll 0 0 transparent;border-left:1px solid #BBB;border-right:1px solid #BBB;color:#000;cursor:pointer;float:left;outline:medium none;text-align:center;vertical-align:middle;white-space:nowrap;border-color:#CCC #BBB #A0A0A0;border-style:solid;border-width:1px;margin:1px 0;padding:3px 6px}
+
+
+/*===================================================
+     NOTIFICATION BUTTON HOVER AND ACTIVE EFFECT
+====================================================*/
+
+.notificationIcon:hover{border:1px solid #818181}
+.notificationIcon:active{border:1px solid #616161;background:#FBFBFB}
+.iconShow{padding:0 8px 3px}
+.liveFeed{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAgtJREFUeNqcUz1vE0EQfXu357XucjanEOTEInRIFqKwqFzkHyQdLgINEg2WQO4QoqQARGdRGCEh0SCKRKJMky6Fq/S0pMESsRzsXIzvk5n1+WRMwcdIzzu3O2923sxaNJvNHQDr+D/7KpMk2eh2u2/CMPwnpmVZaLVaDziBCIIA2y8OkChXHwohIAwDBq2maWoYBJn5KzJC9+5NMFfGcWwQEFkObtRqf3X799EIzGEuJxA6QRThwj9HHEx1kCElEtpb9s2CgqA1SyAkEQ0m88b4bIi3d67rwHvvjvH+/i3tN18fYe/R1mz/w2e4JU9fyNy8AtYdRiEGg4EOHJ/7ua9sJ/ftchlF+v6tAm5OIkw8/HRCDZNwr6zj8eEZpCVxaeMqnh1T+SSlvObBIhFRFMwq4B/OZtJYTFWE65aIZEEWCjOwz2dEZvBkQFOL40meQEtYW7EQpqlukB4frZJBezRrmCyTfDYn/YGs8TMJKR282tnUMiTflM1bvwcCn8dxMNetwcZcUa/Xdylgc3nW7Xb75eJ3p9N5shxDyU+owvRjmpXGRq+LMz91XfeX4Ol0Si2Qzw16oYsm+/0+GHNTSsHzPFWtVmHbtpY0mUwwHA4VgRPlsZVKRfcMWb9WCZcJRcdxbjcajWuLN/V6vS++7++TGxC+EU65DfMEXJedQf7hr8Ad9AkXrPinAAMARd8Js/MlOmUAAAAASUVORK5CYII=) no-repeat}
+.history{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FJREFUeNpsU91rI1UcPfORJpNJ2kmapkk2afoxaW23S5DUhkArahdlRbqI0IofL/uwgviy+A+o4IOgC4vgi+BLH2Rhsaj4UFAW6+p2jd0ldW0jzbZpkqmdTr6/JpPJZJzdVlHxwIF7f/eew7k/fpeYvoS/oWkUVFWDnWXCfU7ufKdtd+W2nss0G/qDZqP+s66jbDLR+CdoECeLTgegQI89Mx+9FhgPXJCUClnN03g2chFqx4y9/exR/M7WJ7nsHx8aJjJBnAgp1zmzISZh6bFMv3lp+dvYHD9TlFTC1ZmEQz6DAOvH2JlBeDz9tonpiaebshLLZY++IUnikQnVy/ugKj2OV5cX1qIx/2j2vg3zvstYnF2Gv3cEQx4nouFxcD06GvUGgiF+pFCqTgk58TpJkjrFDHnAjwXefuqCf6mQtiPCvQZfvwdWGwPWxoLjuEdRnVwvfE4WUr4Ezusd39nZy9brzXuUb5YO81Mj7xM2pZ+TJxCdehJfff0lisUieJ4/ba4G3eggyzIgNBVlWUO+0uwXj/K/UuEXet9iRu0vVpQGGILGY+4IpifDuHr1I+zu7iIYDMLhcKDb7UI3KDfryIgVNDXSeSiIKUqhztcGfOxlaFXM0M/jHD8De58N/uFhrK6u4u7mJgqFAkKhECqVCm79sI6qQkAhmZ50WrhPy9VAy4OIxrNtKjI5hy7RgWLE5c1mzHu9uJ3PY2VlBfF4HBcXFzE6Ooa60IJabhkv01p0W61mWg2r4B18Yoi2WGCx2aAY0Ws3b+LlK1fwit0OTVWRN4wI6Gi2AdJCQxRzQrlUS5AE2VPdTu6tVTsakrkiFEFAbX0dfUtLsBkJrIYpwzAIBALGLHiQEkqQdRo7v2fWanXle4qABknY23cPT74+4Bk0lyUJoYV5cG43Wo06tK4Gq5VFW2nhx3spSBqDXxKp+nc3PntDKaT2Ka0holPNHacfpAnf2diC1eXGoViEbsx2MplEThDRMv7I7a0DSB0G2/vH+Pzau+/VMhs3dPnYGP9TyGUhuZ1INGhH8HHrgN8iVtuotEmUVRMOyiokhcZPG3cr1z9+54PyweanhqT+UEfg3+AIk33Wf3bupVA4GnN5fO6HRenoUEwl7mzkfrv1ha7W4kapZFD/P4O/YDLoMI77TrZ65VSk/vfinwIMAHjohvEdnszOAAAAAElFTkSuQmCC) no-repeat}
+.messagebtn{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNpsk89LVFEUxz/vveu8mXEyR62mKYtUJHOTQdoiEwQhWlS0a9smCoJ2rfofXFTU1j8giCAQihZRiVQI4SYqxRKizMxxxnm/O+fNFA504TNvOOf7Pfec+95l+k1CkiRGKAu20CtYgiO4wnVhpMlwk5HbL1PfGeNYvLizQHfVo5bAqmWxmSR8LXewr5il20uwlzc4GPrkcNhLTI9oShaYu+/4YL7XOL3uwa1R+O1xAqgLXr6NbMbBjRKqQ52MJrHYLSmS4O52cabfQqVOn6nUI471OLz/Aef6RIKIGvxdhSb/1pPP0N8JH9eirB0HPlOHYf4bPF9pCIL4/+hSjWrVE4nXDuRHq10YgNlleLVUw7HFELWiMc2pRrXqCdICvs+mD0e7ZIR+uP/6F4urVWIZZica05xqVKse9aYFfGmvEsBwN1wcPcDNmQXWq1ELGtOcalSrHvWaIAqJosZ8lrT5cG6FK+dPcfXB3M5zS2OaG790iKh5Huo1ge+l1XIG7i3AjYkSxYLDz/HjLQVOlh0GOkqp5pqktkPtwMOE2obsPLMIY2XYX8wQSkcTg+0tBVSjubGoob08BKk3CAIef4KS6AeLsOU1DDm7xU9ddiRsaNZqpB712nXPx83A5BF5r/p9yijGgURPnwb6X2OaU41q1aNe40qisL3Gs0Vb2hQcxUqftm2lu8dxImPFQvMZxxTsGPWayaGuL4/mlpKca6K8a9rasxnyWZPkM8a4GbMl/nbPD2s1P0xq9XBXte7HNS+sbHuhetv02k7p5RE2hF5BX6pcTHqEp8KEMN+8ZGeFqjAr7BHKfwQYABoqVj+Q8nhBAAAAAElFTkSuQmCC) no-repeat}
+.pingbtn{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAplJREFUeNqk00lMU0EYAOB/lre0lPJoLbSytCUoBKIxuFQlxsTEixIOelBcDiQejVyNMTEaCTEx8WDiwZNnDR6NIsiNakw8oBBZjAErLVZKt/eY13mLrVD0nflPc5j5/n/+mR/Ztg07CVpdvIuvAMUELMsEyygB8bqgpskHUzp9qnJrQDdBR/8dJMhO3m6j+7YBjBEqcbPBNE1kmRaYySxkExni97hG9GBj6LsKfbppQxXxSwhV8m8DE5PLLz5Pp/oBONWZCqpaBKUGf+u/fHxo3ePDRc0Co3zbKrDGbBPA9Q+YmVnt293kHu3sqH9WLDLAlmE07g2yeG1geCmpnRTJ5lG0JaiG5eyBbemmxlA8r/I3x2IRoA2K/9GX3NhKIt/jEQnwrX25DQPKtwWKbOQAmF4EnDVkpa4Z5Eig/ebrpVdpZuzxygQK+uaejGrAmajnQTKvB+Mr7KoD0JkGXjdltRF/+43R+fFfKg97XRSKJaNSOKTzDM53+R63LczORgK+hyQaWPzb/Cpgch0RahsfU6Xo/HImbHNebqQORZXBciID5zq898LLi+NTn1afCAWNnw6K9x2ArnN0YH+j98qRXW8HDocu5FJZnlvXIPljDQZjoZG+BnxnbjYZqvUpiNoESOI3OADLtlGd4oaIT4D+Lt/zS72tF7VUpnCtt3V46FT41sJ0AgiVQZJkmwgSEGY6X6GCsQ2OkWFCt8eG4MH6l7Hmng9HWzw/cSEPJ3rbILnKMAMJYywgRAUnoCju/Pjk3N2vC+lBTAiIAgWXJPB5TCihIpIlCYQ6pRlzpHm8bi7L1AnEDkWvj03MnE2n83I5BVQQQspftVyuKLpsSXKBIMrvO9sDEx3dLZplbQ4h2uk0Ythh/BFgACBwEpOO6TrAAAAAAElFTkSuQmCC) no-repeat}
+.ackAlarm{background:url(images/icons/tick_icon1.png) no-repeat;padding:0 5px 3px}
+.geofenceViolationAlarm{background:#F8DEDF}
+.geofenceViolationAlarm .notificationHeading{border-bottom:1px solid #F5F5F5}
+.geofenceViolationAlarm:hover{color:#a94c4c}
+.fuelAlarm{background:#FBFBF1}
+.tempratureAlarm{background:#dbecff}
+.tempratureAlarm:hover{color:#4c6fcd}
+.tempratureAlarm .notificationHeading{border-bottom:1px solid #fff}
+.trackViolationAlarm{background:#d4ffcd}
+.trackViolationAlarm:hover{color:#258815}
+.overSpeedingAlarm{background:#f6a7aa}
+.overSpeedingAlarm:hover{color:#871414}
+.overSpeedingAlarm .notificationHeading{border-bottom:1px solid #f9f9f9}
+.contentVideoSinglescreen{bottom:0;left:0;overflow:auto;position:absolute;right:0;top:34px;margin:0 auto}
+.innerContentSinglescreen{display:block;overflow:auto;height:99%;width:99.2%;margin:auto}
+.videoContainerSinglescreen{border:2px ridge #4D90FE;float:left;height:48.5%;width:32.7%;position:relative;margin:.1%}
+.innerContainerSinglescreen{background:#000;border:1px solid #CCC;bottom:40px;left:4px;position:absolute;right:4px;top:4px}
+.showVideoSinglescreen{background:#000;border:1px solid #000;bottom:4px;left:4px;position:absolute;right:4px;top:4px}
+.controllBarSinglescreen{bottom:5px;height:30px;position:absolute;padding-top:5px;left:4px;right:4px;background:#F0F0F0;border:1px solid #CCC;border-top:none}
+.controllButtonSinglescreen{display:block;color:#000;cursor:pointer;float:left;outline:medium none;text-align:center;vertical-align:middle;white-space:nowrap;height:15px;width:15px;margin-left:3px;margin-right:1px}
+.stopSinglescreen{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASNJREFUeNqUUkFOwzAQHDuOnbRKeQTP4MIDQHwAOPAuHsOtr0mlVmqqxvYuYwelXJv1xLK1s7M7slFV3PO58nt5ffsOwT/1/UYfdjsZdgOGYcB2s0XXdyb4YBvX7D8/3r8q4TKdnyXnR1CssQbet+i7DqoCHtE0Fq1zflU4T9OcJUP+0LYtQgjoSPLcvQjJel0J18tFmAlwGcbpeKRCX8F2kFigsVZWwjzPdaCSbNhCwaY/USGUVuBcwztzGzrGuLqgZnFtPIxwrYMpQ1iKq9wIKaVafVkMNVBRDsxM8ssZ+s9WOmRTUZwVVaBUI44EqRUKsTeCZK9RixPVSpEFKWfEFJHLnlNYCaT/MDVqzpqLV7pc1hAxh3G03PfVmHufxq8AAwCclZdw4vbpiAAAAABJRU5ErkJggg==);background-repeat:no-repeat}
+.stopSinglescreen:hover{background-repeat:no-repeat;background-image:url(images/icons/1_Hover.png)}
+.recordingOffSinglescreen{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXRJREFUeNqUUV0vA0EUvTszO9vuauk2DcqzCCIeRat4KK/EXyCE+jXiu78FL63Em1SaCM/6Qghqdtd8uCtRxAs3OXNnMufknjljGWPgP8W+HxaXlmdc113xfX8im81a6XTqgnNe3apsnnxyrM8J5fLCKHf4NufOdC6XY329vZDxM9Jz3bplWZurqyuXMY/ES7FQLIVhsCtexVwg2qz98gxB8AryLWJa6xIlZP/osDrbsSREsEYImbKZBKM0PJEn6El3Q5eXAm47AAYmcUoFqacfgiAQ4yhg0pagjUJoeHh8BCeZACSC6yYpZWykMyGMQhJfMIUCpUAhWq1bIMQCJSV4XR443PlKSUaygW1IS80QH6IYBCyIwggwLZVMJJsdgdZqH9MaxF4waMmgJaM13Ms7kCgUQpx7nrvzI9aBfH7MaHMQP55SCowhKDO4r2V8f6N2Vm/8EMSV7+ufx0jWMcZhSmhMbjLb3ru6uT7+9XF/rXcBBgD6GqROKp4EIAAAAABJRU5ErkJggg==);background-repeat:no-repeat}
+.recordingOffSinglescreen:hover{background-repeat:no-repeat;background-image:url(images/icons/2_hover.png)}
+.recordingOffSinglescreen:active{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWJJREFUeNqUUU1LQkEUPXfejF/vZWVCqLlwE1EhLaPIbNMvCYpq4x8I+gdCVCb9lmpTRLswXLYTCRINP97z83WnNJQ2deHOzB3umXPOHXJdF/8JOV40LWvb9Pv3EI2uIRYjhMPP8Pmukc/fjnpoxPCq1Iop5VmYaMuIxyUSCSAS6SEYfADREbLZF90n9PJIlPro9S6ajrNj27ZEtQo0GkC7LdHvpyBlDplM+kfSG7DvATbamlJnvQ7RakG0+abbBSm1TkTHCrj7ArwDSS+DB8MX/I4Df60GodPj0boNKLWsRgwsQOiiNzRmcM6Xy5CBAAQRRKcD8vkQGAGaQIGlLDJAukNjxCxTpRLTDiBsuy9Mszg7NtYcq13g5k19wfLg0SCWpAwDRrf7JC3rfGKsJ0Sr7OHKZPPTXM99p8vne28odJisVAoTAB2nRLvs5cAClrjRnQGKvF+mXffm18f9NT4FGAAlzHFUbUy7LwAAAABJRU5ErkJggg==);background-repeat:no-repeat}
+.ptzTextSinglescreen{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAI5JREFUeNpi/P//PwMtARMDjcGoBaMWjFoABKCcjIzZ2NjKgfg/Egbx76KJgfBuKEYWm4luHgsOe+8BsTIQd0AxI1R8N1QuHU19ORR3khNE7wnICyIZfg9dEpcPlEChBzW8goAF5VB1s7BJEgoiQkAJakE6Lp9SmorKofRMqI/voitgHK0PRi0YtYABIMAA93o/0E7KxV4AAAAASUVORK5CYII=);background-repeat:no-repeat;height:20px;margin-left:-4px;margin-top:-5px;width:21px}
+.ptztextDisable{background-image:url(" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKBJREFUeNpi/P//PwMtARMDjcGoBaMWjFrAwMCCLrBnz55yINWBJFQBxGlArISuFEq7IInNcnFxScdrARTcAypUBloGsqgDyGaEWr4bKpeOxVEg3ElOEL3HJwk0XBBmONDiewSDCAqUgBr/Qw2vIOCAcqi6WUTFAXIQEfIa0BFKUAvSgerf0yIVlUPpmSAfA/FddAWMo/XBqAWjFjAABBgAEzQ2ZHhqxv4AAAAASUVORK5CYII=");background-repeat:no-repeat}
+.lockSinglescreen{background-image:url(images/icons/3.png);background-repeat:no-repeat}
+.lockSinglescreen:hover{background-image:url(images/icons/3_Hover.png);background-repeat:no-repeat}
+.fullScreenSinglescreen{float:right;background-image:url(images/icons/Full-Screen.png);background-repeat:no-repeat}
+.fullScreenSinglescreen:hover{background-image:url(images/icons/Full-Screen_Hover.png);background-repeat:no-repeat}
+.lockedVideoSinglescreen{height:15px;width:15px;position:absolute;right:0;display:none;background-repeat:no-repeat;background-image:url(images/icons/lock_3.png)}
+.lockBorderSinglescreen{border:2px solid red}
+.clear{clear:both}
+.fuelAlarm .notificationHeading,.trackViolationAlarm .notificationHeading{border-bottom:1px solid #E3E3E3}
+
+/*--------------------------------------------------------------------------------------*/
+.rtime {color: #999;font-size:11px; padding-left:18px;}
+.ms { cursor:pointer;}
+.detail { color:#3B5998;cursor:pointer; }
+.ms:hover, .detail:hover { text-decoration:underline;}
+.notificationDetail {padding-left:18px;}
+.a-lasttime {clear:both;}
+
+
+/*==================================
+     Custom Message Board style
+==================================*/
+#showMessage { -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2); box-shadow: 0 2px 4px rgba(0,0,0,0.2);font-size:10px; text-align:center;}
+#showMessage ul li{font-size:12.8px!important;font-weight:700!important;font-family:arial,sans-serif;color:#222;vertical-align:baseline}
+.success{background-color:#F9EDBE;color:#222;border:1px solid #F0C36D;margin-top:2px!important;padding:0}
+.fail{background-color:#ffd2d3;	color:#249;	border:1px solid #5d9ade;padding:0px;margin-top:0px !important;border:1px solid #F0C36D;text-align:center;margin-top:2px!important;}
+.active{ background: #F9F9F9;border: 1px solid #aaa;}
+#unAckWrapper .monitoringNotification.active{background:#fffde1;}
+/*-------------------------------------*/
+

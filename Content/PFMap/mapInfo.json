@@ -1,0 +1,91 @@
+{
+    "sites": [
+        {
+            "id": "8864e66a-dbcf-46d1-8e17-276e7bc45b0b",
+            "layers": [
+                {
+                    "name": "cite:site4",
+                    "title": "Perimeter Fence",
+                    "baselayer": "true"
+                }
+            ],
+            "bound": {
+                "minX": 0,
+                "minY": 0,
+                "maxX": 1180,
+                "maxY": 394
+            },
+			"restrictedExtent":{
+				"minX": 20,
+                "minY": 10,
+                "maxX": 1100,
+                "maxY": 386
+			},
+            "zoom": 2,
+            "center": {
+                "latitude": 560.03906,
+                "longitude": 199.15234
+            },
+            "maxResolution": 4.109375,
+            "srs": "EPSG:4326"
+        },
+        {
+            "id": "b858e553-cecc-42d2-9248-32ebb5d3f927",
+            "layers": [
+                {
+                    "name": "cite:site2",
+                    "title": "Perimeter Fence",
+                    "baselayer": "true"
+                }
+            ],
+            "bound": {
+                "minX": 0,
+                "minY": 0,
+                "maxX": 1180,
+                "maxY": 396
+            },
+			"restrictedExtent":{
+				"minX": 20,
+                "minY": 10,
+                "maxX": 1100,
+                "maxY": 386
+			},
+            "zoom": 2,
+            "center": {
+                "latitude": 560.03906,
+                "longitude": 199.15234
+            },
+            "maxResolution": 4.109375,
+            "srs": "EPSG:4326"
+        },
+        {
+            "id": "dfd982ff-a919-4b65-a6ff-d4413dbaa570",
+            "layers": [
+                {
+                    "name": "cite:site3",
+                    "title": "Perimeter Fence",
+                    "baselayer": "true"
+                }
+            ],
+            "bound": {
+                "minX": 0,
+                "minY": 0,
+                "maxX": 1180,
+                "maxY": 396
+            },
+			"restrictedExtent":{
+				"minX": 20,
+                "minY": 10,
+                "maxX": 1100,
+                "maxY": 386
+			},
+            "zoom": 2,
+            "center": {
+                "latitude": 560.03906,
+                "longitude": 199.15234
+            },
+            "maxResolution": 4.109375,
+            "srs": "EPSG:4326"
+        }
+    ]
+}

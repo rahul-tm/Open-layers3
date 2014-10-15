@@ -1,0 +1,24 @@
+/* ------------------------
+* Coded By : Samta Jain.
+*-------------------------*/
+
+/*==================================
+            Taskbar Start
+==================================*/
+@charset utf-8;
+.taskbar{background-attachment:scroll;background-clip:border-box;background-color:#E2E2E2;background-image:none;background-origin:padding-box;background-position:0 0;background-repeat:repeat;background-size:auto auto;border-top-color:#999;border-top-style:solid;border-top-width:1px;bottom:0;height:30px;left:0;padding-left:82px;position:fixed;right:0;text-align:center;z-index:99}
+.taskbar label{color:#666;font-size:11px;text-align:center;margin:4px auto 0}
+.build{color:#5A99DF;font-size:10px;float:right;margin:9px 15px 0 auto}
+.logo{bottom:0;left:0;position:absolute;top:5px}
+
+/*==================================
+     Start Chart custom Tooltip
+==================================*/
+#chartpseudotooltip{font-size:11px;z-index:10;background-color:#60a3ed;color:#FFF;display:none;padding:3px}
+#toolLogo{position:absolute;left:10px;top:4px}
+#tempTooltip{display:none;left:19px;position:absolute;top:21px;z-index:6;background-color:transparent}
+.tooltipTable{border-collapse:collapse;color:#444;background-color:#8DBFF2;width:100%;font-weight:700}
+.tooltipTable tr td{color:#fff;font-size:11px;padding:3px 6px}
+.tribox{background-color:transparent;float:left;height:15px;left:6px;position:relative;top:20px;width:20px;z-index:9}
+.tableDiv{float:left}
+#toolLogo{color:#5e9de2;font-size:16px;font-weight:700;left:10px;position:absolute;top:4px}
